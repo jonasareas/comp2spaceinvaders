@@ -1,0 +1,13 @@
+#Anúncios das alterações nas versões do projeto
+
+= Descrição =
+
+Coloquemos aqui o que foi implementado nas suas últimas alterações. Por favor sigam o modelo 
+
+
+= Alterações =
+
+*02/06/2007* - *17:44* - _Bola_
+
+  * Criadas as classes Objeto, Nave, Alien, Chefao, Asteroide, ainda sem métodos.
+
