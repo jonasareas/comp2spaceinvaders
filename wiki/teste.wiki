@@ -1,7 +1,8 @@
 #summary One-sentence summary of this page.
-#essa página wiki serve de teste, 
-#para testarmos as funcionalidades do wiki e evitarmos de fazer merda 
-#quando formos escrever nas páginas
+**************
+essa página wiki serve de teste, para testarmos as funcionalidades do wiki e evitarmos de fazer merda quando formos escrever nas páginas.
+
+Editem a vontade, criem o que quiserem. Apaguem o que quiser. Apenas mantenham esse básico que está entre asteriscos.
 
 = Introduction =
 
@@ -15,3 +16,4 @@ Add your content here.  Format your content with:
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
 
+**************
