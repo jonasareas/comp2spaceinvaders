@@ -1,0 +1,17 @@
+#summary One-sentence summary of this page.
+#essa página wiki serve de teste, 
+#para testarmos as funcionalidades do wiki e evitarmos de fazer merda 
+#quando formos escrever nas páginas
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
