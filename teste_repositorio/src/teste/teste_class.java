@@ -9,6 +9,7 @@ public class teste_class {
 		// TODO Auto-generated method stub
 		System.out.println("Bla bla bla!");
 		System.out.println("Jonas já instalou e editou este arquivo.");
+		System.out.println("Eu (Xico) também consegui!!!!");
 	}
 
 }
