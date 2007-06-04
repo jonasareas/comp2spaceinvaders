@@ -1,4 +1,4 @@
-package br.ufrj.dcc.comp2.projeto;
+package br.ufrj.dcc.comp2.testeprojeto;
 import javax.swing.*;
 
 public class TesteJMenu {
