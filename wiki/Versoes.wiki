@@ -2,6 +2,10 @@
 
 = Alterações =
 
+*03/06/2007* - *23:39* - _Bola_
+
+  * Criada classe TesteJMenu com um teste meu de como será o menu. Pretendo até amanhã fazer funcionar listeners para as opções abrirem novas janelas e fechar o programa.
+
 *02/06/2007* - *17:44* - _Bola_
 
   * Criadas as classes Objeto, Nave, Alien, Chefao, Asteroide, ainda sem métodos.
