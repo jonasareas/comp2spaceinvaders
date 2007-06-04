@@ -4,7 +4,7 @@
 
 *04/06/2007* - *19:12* - _Bola_
 
-  *Uma alteração estrutural: quando formos fazer testes com classes experimentais, favor inserirem na package br.ufrj.dcc.comp2.testeprojeto. Assim deixamos a outra package apenas para as classes que efetivamente farão parte do programa, e pra package de teste, nossas viagens com o Java. ;)
+  * Uma alteração estrutural: quando formos fazer testes com classes experimentais, favor inserirem na package br.ufrj.dcc.comp2.testeprojeto. Assim deixamos a outra package apenas para as classes que efetivamente farão parte do programa, e pra package de teste, nossas viagens com o Java. ;)
 
 *04/06/2007* - *17:40* - _Jonas_
 
