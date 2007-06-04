@@ -2,6 +2,12 @@
 
 = Alterações =
 
+*04/06/2007* - *17:40* - _Jonas_
+
+ * Criadas algumas classes para teste de imagem.
+   TesteMovimento e MyDrawPanel funcionam juntas, dndo uma idéia de desenho e de eventos (botão)
+   TesteNave -> era pra desenhar a nave na tela, mas naum consegui de jeito nenhum... =S Quem puder dar uma olhada... subi a figura da nave também...
+
 *03/06/2007* - *23:39* - _Bola_
 
   * Criada classe TesteJMenu com um teste meu de como será o menu. Pretendo até amanhã fazer funcionar listeners para as opções abrirem novas janelas e fechar o programa.
