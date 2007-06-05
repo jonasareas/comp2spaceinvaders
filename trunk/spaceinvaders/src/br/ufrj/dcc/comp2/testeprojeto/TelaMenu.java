@@ -14,7 +14,7 @@ public class TelaMenu{
 	}
 	
 	public void constroitela() {
-		JFrame frame = new JFrame(); //novo frame
+		JFrame frame = new JFrame("Space Invaders Boladão 0.0.0.0.1 - Frankenstein Games"); //novo frame
 		
 		JMenuBar menu = new JMenuBar(); //cria o JMenuBar. O menu fica dentro de JMenubar.
 		
@@ -46,7 +46,7 @@ public class TelaMenu{
 		
 		frame.setJMenuBar(menu);
 		
-		frame.setSize(300,300);
+		frame.setSize(800,600);
 		frame.setVisible(true);
 		
 	}
