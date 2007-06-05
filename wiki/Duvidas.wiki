@@ -1,5 +1,13 @@
 #Para discutirmos questões relativas ao projeto, e tirarmos dúvidas
 
+= Dúvidas de Projeto =
+
+_Perguntas: 
+  1 - Ainda não temos os textos para elas.
+  2 - Eu não sei ainda como se faz para fechar uma janela através de instrução de botão.
+  3 - Estou estudando algo que trave o outro frame enquanto um estiver aberto(O Cleiton me cantou a pedra, estou pesquisando agora)._
+
+
 = Monitor presente =
 
 _Pergunta: Devemos colocar o monitor como membro do grupo?_
