@@ -24,6 +24,7 @@ public class TesteNave extends JPanel{
 		frame.getContentPane().add(BorderLayout.CENTER, t);	
 		frame.setSize(300, 300);
 		frame.setVisible(true);
+		t.paintComponent(frame);
 
 	}
 	public void paintComponent(Graphics g) {
