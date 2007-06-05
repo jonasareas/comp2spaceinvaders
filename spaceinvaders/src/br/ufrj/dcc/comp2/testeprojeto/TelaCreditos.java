@@ -14,7 +14,7 @@ public class TelaCreditos {
 	}
 	
 	public void constroiTela() {
-		JFrame frame = new JFrame("Ranking");
+		JFrame frame = new JFrame("Créditos");
 		
 		frame.setSize(200,200);
 		frame.setVisible(true);
