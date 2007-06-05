@@ -29,7 +29,7 @@ public class TesteNave extends JPanel{
 	}
 	public void paintComponent(Graphics g) {
 	
-		Image nave = new ImageIcon("nave.JPG").getImage();
+		Image nave = new ImageIcon("./imagens/nave.JPG").getImage();
 		
 		g.drawImage(nave, 100, 100, this);
 
