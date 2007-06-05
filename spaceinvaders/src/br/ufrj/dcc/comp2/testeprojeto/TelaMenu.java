@@ -25,10 +25,6 @@ public class TelaMenu{
 		JMenuItem item4 = new JMenuItem("Créditos");
 		JMenuItem item5 = new JMenuItem("Sair");
 		
-		JMenu menuCred = new JMenu("Créditos");
-		
-		JMenu menuSair = new JMenu("Sair");
-		
 		item1.addActionListener(new item1Listener());
 		item2.addActionListener(new item2Listener());
 		item3.addActionListener(new item3Listener());
@@ -47,8 +43,6 @@ public class TelaMenu{
 		menuJogo.add(item5);
 		
 		menu.add(menuJogo);
-		menu.add(menuCred);
-		menu.add(menuSair);
 		
 		frame.setJMenuBar(menu);
 		
