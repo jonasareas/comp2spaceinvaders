@@ -6,6 +6,7 @@ _ Perguntas:
   1 - Como se faz para fechar uma janela através de instrução?
   2 - Como fazer com que trave o outro frame enquanto um estiver aberto? _
 
+Jonas: Bola, ponto 1 vou procurar, mas com relação ao ponto 2 axo q a pergunta deveria ser "Como abrir um frame por cima do outro?" - Questão discutida na monitoria... (lance do painel e talz...
 
 = Monitor presente =
 
