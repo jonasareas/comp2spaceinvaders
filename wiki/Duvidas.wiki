@@ -2,10 +2,9 @@
 
 = Dúvidas de Projeto =
 
-_Perguntas: 
-  1 - Ainda não temos os textos para elas.
-  2 - Eu não sei ainda como se faz para fechar uma janela através de instrução de botão.
-  3 - Estou estudando algo que trave o outro frame enquanto um estiver aberto(O Cleiton me cantou a pedra, estou pesquisando agora)._
+_ Perguntas: 
+  1 - Como se faz para fechar uma janela através de instrução?
+  2 - Como fazer com que trave o outro frame enquanto um estiver aberto? _
 
 
 = Monitor presente =
