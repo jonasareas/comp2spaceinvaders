@@ -2,6 +2,14 @@
 
 = Alterações =
 
+*04/06/2007* - *22:45* - _Bola_
+
+  * Classe TesteJMenu morreu. Virou TelaMenu. Junto com TelaMenu vieram TelaRanking e TelaCreditos. Como podem ver, já é uma preparação pras classes que serão as telas dos jogos. Ainda não joguei pro projeto em si por três motivos:
+  1 - Ainda não temos os textos para elas.
+  2 - Eu não sei ainda como se faz para fechar uma janela através de instrução de botão.
+  3 - Estou estudando algo que trave o outro frame enquanto um estiver aberto(O Cleiton me cantou a pedra, estou pesquisando agora).
+  Se alguém souber algo disso, colocar por favor na pagina de duvidas...
+
 *04/06/2007* - *19:12* - _Bola_
 
   * Uma alteração estrutural: quando formos fazer testes com classes experimentais, favor inserirem na package br.ufrj.dcc.comp2.testeprojeto. Assim deixamos a outra package apenas para as classes que efetivamente farão parte do programa, e pra package de teste, nossas viagens com o Java. ;)
