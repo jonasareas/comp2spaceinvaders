@@ -5,7 +5,7 @@
 *06/06/2007* - *11:20* - _Xico_
 
 *Criei um projeto novo (ProjetoSpaceInvaders)* para ser o oficial.....
-Antes que vocês me xinguem, eu tentei criar no atual, mas não consegui pelo seguinte motivo:
+Antes que vocês me xinguem, eu tentei fazer o que eu queria no atual, mas não consegui pelo seguinte motivo:
 
 Já existem 2 pacotes no projeto atual e nós precisamos de 3 pacotes (model, control, view) que deveriam ser criados dentro do pacote '......projeto'
     O problema: Não dá pra criar pacote detro de pacote.
