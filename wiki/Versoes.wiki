@@ -2,6 +2,10 @@
 
 = Alterações =
 
+*06/06/2007* - *16:30* - _Xico_
+
+Alguns atributos e métodos adicionados ao novo projeto.
+
 *06/06/2007* - *11:20* - _Xico_
 
 *Criei um projeto novo (ProjetoSpaceInvaders)* para ser o oficial.....
