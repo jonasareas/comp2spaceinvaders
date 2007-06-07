@@ -6,6 +6,14 @@ Add your content here.
 
 = Details =
 
+*06/06/2007* - *22:05*  _Xico_
+
+Estou disponibilizando para download também o documento de visão de negócio pra vocês verem...... Qualquer modificação, atualizem no download e postem aki.....
+
+arquivo: Documento de visão de negócio - Space Invaders.doc
+
+*06/06/2007* - *11:30*  _Xico_
+
 pessoal.... criei o primeiro diagrama de classes do nosso projeto.... ainda está bem primitivo, pois não temos os casos de uso.....
 Estou colocando na parte de downloads o JUDE(editor para diagramas de classes, use-cases... enfim..... é um bom programa....
 Também estou colocando o arquivo que eu criei(Class Diagram.jude), para que todos possam ter e alterar.....
