@@ -2,6 +2,11 @@ Pagina para que tratemos dos assuntos de documentação
 
 = Alterações =
 
+*09/06/2007* - *12:52* - _Marcelo_
+
+O Xico me envio umas alterações, porém acho q o email dele veio incompleto...
+Sugiro tb segunda finalizarmos juntos as alterações necessárias.
+
 *09/06/2007* - *11:35* - _Bola_
 
 Documentos de visão de negócio(Do Xico) e de Use Cases(do Marcelo) fundidos em um só, chamado documentacao_space_invaders. Leiam, e alterem o que estiver errado.
