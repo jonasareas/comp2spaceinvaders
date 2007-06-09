@@ -4,24 +4,24 @@
 
 *09/06/2007* - *15:07* - _Bola_
 
-* TesteProjeto: Os frames se fecham quando apertam o botão fechar, ou clicando pelo menu. Mas infelizmente ainda não consegui fazer a tela congelar enquanto está em outra.
+  * TesteProjeto: Os frames se fecham quando apertam o botão fechar, ou clicando pelo menu. Mas infelizmente ainda não consegui fazer a tela congelar enquanto está em outra.
 
 *07/06/2007* - *19:22* - _Bola_
 
-Alterações do xico movidas para o local antigo do projeto. Voltemos a usar o antigo(spaceinvaders), agora com as implementações do Xico.
+  * Alterações do xico movidas para o local antigo do projeto. Voltemos a usar o antigo(spaceinvaders), agora com as implementações do Xico.
 
-Tentando descobrir como apagar aquele monte de projetos inúteis que fizemos a toa lá no trunk.
+  * Tentando descobrir como apagar aquele monte de projetos inúteis que fizemos a toa lá no trunk.
 
 *06/06/2007* - *16:30* - _Xico_
 
-Alguns atributos e métodos adicionados ao novo projeto.
+  * Alguns atributos e métodos adicionados ao novo projeto.
 
 *06/06/2007* - *11:20* - _Xico_
 
-Criei um projeto novo (ProjetoSpaceInvaders) para ser o oficial.....
+  * Criei um projeto novo (ProjetoSpaceInvaders) para ser o oficial.....
 Antes que vocês me xinguem, eu tentei fazer o que eu queria no atual, mas não consegui pelo seguinte motivo:
 
-Já existem 2 pacotes no projeto atual e nós precisamos de 3 pacotes (model, control, view) que deveriam ser criados dentro do pacote '......projeto'
+  * Já existem 2 pacotes no projeto atual e nós precisamos de 3 pacotes (model, control, view) que deveriam ser criados dentro do pacote '......projeto'
     O problema: Não dá pra criar pacote detro de pacote.
     
 Enfim... criei esse....
