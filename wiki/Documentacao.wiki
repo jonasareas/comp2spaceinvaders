@@ -1,10 +1,12 @@
 Pagina para que tratemos dos assuntos de documentação
-= Introduction =
 
-Add your content here.
+= Alterações =
 
+*09/06/2007* - *11:35* - _Bola_
 
-= Details =
+Documentos de visão de negócio(Do Xico) e de Use Cases(do Marcelo) fundidos em um só, chamado documentacao_space_invaders. Leiam, e alterem o que estiver errado.
+
+P.S. -> Já está 90% formatado, então, se precisarmos entregar esse documento é só mudar uma ou outra coisinha, passar pra PDF e enviar. ;)
 
 *06/06/2007* - *22:05* - _Xico_
 
@@ -18,5 +20,3 @@ pessoal.... criei o primeiro diagrama de classes do nosso projeto.... ainda est�
 Estou colocando na parte de downloads o JUDE(editor para diagramas de classes, use-cases... enfim..... é um bom programa....
 Também estou colocando o arquivo que eu criei(Class Diagram.jude), para que todos possam ter e alterar.....
 Estou trabalhando na parte de controle e vista do projeto também...... espero acabar isso ainda hj....
-
-*Malz, mas ainda n sei mexer nisso direito.... se vcs quiserem editar, be my guest.....*
