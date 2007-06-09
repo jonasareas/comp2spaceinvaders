@@ -1,21 +1,26 @@
 package br.ufrj.dcc.comp2.testeprojeto;
+
 import javax.swing.*;
 import java.awt.event.*;
 
-public class TelaMenu{
+public class TelaMenu extends JFrame{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	static TelaMenu teste = new TelaMenu();
+	JFrame frame = new JFrame("Space Invaders Boladão 0.0.0.0.1 - Frankenstein Games"); //novo frame
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TelaMenu teste = new TelaMenu();
 		teste.constroitela();
 	}
 	
 	public void constroitela() {
-		JFrame frame = new JFrame("Space Invaders Boladão 0.0.0.0.1 - Frankenstein Games"); //novo frame
-		
 		JMenuBar menu = new JMenuBar(); //cria o JMenuBar. O menu fica dentro de JMenubar.
 		
 		JMenu menuJogo = new JMenu("Jogo"); //novo menu
@@ -66,7 +71,6 @@ public class TelaMenu{
 	
 	class item3Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			System.out.println("Ranking");
 			TelaRanking telaRank = new TelaRanking();
 			telaRank.constroiTela();
 		}
@@ -74,7 +78,6 @@ public class TelaMenu{
 	
 	class item4Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			System.out.println("Créditos");
 			TelaCreditos telaCred = new TelaCreditos();
 			telaCred.constroiTela();
 		}
@@ -82,17 +85,8 @@ public class TelaMenu{
 	
 	class item5Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			System.out.println("Sair");
+			System.exit(0);
 		}
 	}
-	
-	/*
-	 * Morre para entrar no lugar os 5 listeners diferentes.
-	public void actionPerformed(ActionEvent event) {
-		JFrame novoFrame = new JFrame();
-		novoFrame.setSize(100,100);
-		novoFrame.setVisible(true);
-	}
-	*/
 
 }
