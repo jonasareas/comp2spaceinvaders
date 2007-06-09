@@ -76,8 +76,8 @@ public class TelaMenu extends JFrame{
 		}
 	}
 	
-	class item4Listener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
+	class item4Listener implements ActionListener{
+		public void actionPerformed(ActionEvent event){
 			TelaCreditos telaCred = new TelaCreditos();
 			telaCred.constroiTela();
 		}
