@@ -1,5 +1,8 @@
 #Anúncios das alterações nas versões do projeto
 
+
+= Alterações =
+
 *09/06/2007* - *23:04 - _Jonas_
 
 Teste de Movimento da Nave Concluído... 
@@ -7,8 +10,8 @@ Adicionado TesteMovSemListener (auto-explicativo), TesteMovComListener (auto-exp
 
 Amanhã irei adequar este teste de movimento de acordo com o MVC, colocando os métodos nas respectivas classes e pacotes q pertencem...
 
+E ainda... Só consegui fazer a movimentação colocando um TextField no frame... Ainda não sei como posso adicionar um listener (ou melhor, em que), para assim poder fazer a movimentação sem ter q adicionar este elemento...
 
-= Alterações =
 
 *09/06/2007* - *15:07* - _Bola_
 
