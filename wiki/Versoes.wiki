@@ -1,5 +1,13 @@
 #Anúncios das alterações nas versões do projeto
 
+*09/06/2007* - *23:04 - _Jonas_
+
+Teste de Movimento da Nave Concluído... 
+Adicionado TesteMovSemListener (auto-explicativo), TesteMovComListener (auto-explicativo), e KeyEventDemo (exemplo bem legal q axei na API do java...)
+
+Amanhã irei adequar este teste de movimento de acordo com o MVC, colocando os métodos nas respectivas classes e pacotes q pertencem...
+
+
 = Alterações =
 
 *09/06/2007* - *15:07* - _Bola_
