@@ -2,9 +2,9 @@
 
 = Dúvidas de Projeto =
 
-_Respostas as duvidas do Xico:
-1 - Tanto faz as threads estarem no controlador Jogo ou fora dele (nesse caso teria q instancialas no controlador jogo). Acho mais simples elas serem classes internas msm.
+_Respostas as duvidas do Xico:_
 
+1 - Tanto faz as threads estarem no controlador Jogo ou fora dele (nesse caso teria q instancialas no controlador jogo). Acho mais simples elas serem classes internas msm.
 
 2 - A classe keyboard só verifica as ações do teclado em loop msm.  
 
