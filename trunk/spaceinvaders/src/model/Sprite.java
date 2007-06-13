@@ -5,7 +5,7 @@ public class Sprite {
 	public int y;
 	public String file;
 	
-	public void sprite(String nomeArq, int x, int y) {
+	public Sprite(String nomeArq, int x, int y) {
 		this.file = nomeArq;
 		this.x = x;
 		this.y = y;
