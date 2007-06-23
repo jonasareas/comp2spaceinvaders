@@ -26,7 +26,7 @@ public class Screen extends JPanel implements Runnable {
 	}
 
 	public void run() {
-
+		// aqui começa o jogo. =)
 	}
 
 	public void constroitela() {
