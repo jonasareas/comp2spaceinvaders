@@ -1,8 +1,12 @@
 package br.ufrj.dcc.comp2.projeto.view;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -12,13 +16,9 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class Screen extends JPanel implements Runnable {
 
-	/**
-	 * @param args
-	 */
-
 	private static final long serialVersionUID = 1L;
 	static Screen teste = new Screen();
-	JFrame frame = new JFrame("Space Invaders Boladão 0.0.0.0.1 - Frankenstein Games"); //novo frame
+	JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,6 +32,8 @@ public class Screen extends JPanel implements Runnable {
 	public void constroitela() {
 		JMenuBar menu = new JMenuBar(); //cria o JMenuBar. O menu fica dentro de JMenubar.
 
+		PainelDesenho painel = new PainelDesenho();
+		
 		JMenu menuJogo = new JMenu("Jogo"); //novo menu
 		JMenuItem item1 = new JMenuItem("Novo Jogo"); //novo item de menu
 		JMenuItem item2 = new JMenuItem("Pause"); //novo item de menu
@@ -57,14 +59,28 @@ public class Screen extends JPanel implements Runnable {
 		menuJogo.add(item5);
 
 		menu.add(menuJogo);
+		
+		frame.getContentPane().add(painel);
 
 		frame.setJMenuBar(menu);
 
-		frame.setSize(800,600);
+		frame.setSize(808,650);
 		frame.setVisible(true);
-
 	}
 
+	
+	class PainelDesenho extends JPanel {
+		private static final long serialVersionUID = 1L;
+		
+		Image universo = new ImageIcon("./imagens/universotela.JPG").getImage();		
+
+		public void paintComponent(Graphics g) {
+			g.setColor(Color.white);
+			//g.fillRect(0, 0, this.getWidth(), this.getHeight());			
+			g.drawImage(universo, 0, 0, this);
+		}
+	}
+	
 	//classes internas para fazer os Listeners funcionarem
 	class item1Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
