@@ -15,7 +15,7 @@ ATENÇÃO:
 
 3 - A classe Screen.java AINDA NÃO foi substituída pela classe Tela.java, pois existem coisas relacionadas ao menu nela. O mais indicado para fazer essa substituição é o Bola.
 
-4 - Reparem que classes que devem instanciar um objeto de uma classe que não pertence ao mesmo pacote, devem importar esta classe. Acho que, por conveniência, quando formos dar tla import, coloquemos "import ....<Nome do Pacote>.**", como foi feito, por exemplo na classe "Jogo.java"
+4 - Reparem que classes que devem instanciar um objeto de uma classe que não pertence ao mesmo pacote, devem importar esta classe. Acho que, por conveniência, quando formos dar tla import, coloquemos "import ....<Nome do Pacote>.<asterisco>", como foi feito, por exemplo na classe "Jogo.java"
 
 FAZER:
 
