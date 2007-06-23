@@ -37,6 +37,9 @@ public class Jogo extends Thread {
 		if (this.tela == null) {
 			this.tela = new Tela(this.painel, this.teclado);
 		}
+		else {
+			this.tela.vaitela(this.painel, this.teclado);
+		}
 		
 		this.repintor = new Repinta(this.tela, this.painel);
 

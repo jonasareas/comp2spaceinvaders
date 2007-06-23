@@ -28,7 +28,9 @@ public class Tela extends JFrame implements Runnable {
 	public Tela(Painel painel, Teclado teclado) {
 		this.painel = painel;
 		this.teclado = teclado;
+		System.out.println("Teste1!!!");
 		this.constroitelajogo();
+		System.out.println("Teste4!!!");
 	}
 
 	public Tela() {
@@ -38,16 +40,31 @@ public class Tela extends JFrame implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		teste.constroitelainicial();
 	}
 
 	public void constroitelajogo() {
+		System.out.println("Teste2!!!");
 		this.addKeyListener(teclado);
+		JFrame teste1 = new JFrame();
+		teste1.getContentPane().add(painel);
+		teste1.setSize(808,650);
+		teste1.setVisible(true);
+		System.out.println("Teste3!!!");
 		//frame.getContentPane().remove(paineldesenho);
-		frame.getContentPane().add(painel);
-		frame.getContentPane().repaint();
+		//frame.getContentPane().add(painel);
+		//frame.getContentPane().repaint();
 		//this.setVisible(true);
+	}
+	
+	public void vaitela(Painel painel, Teclado teclado) {
+		System.out.println("Teste2!!!");
+		this.addKeyListener(teclado);
+		JFrame teste1 = new JFrame();
+		teste1.getContentPane().add(painel);
+		teste1.setSize(808,650);
+		teste1.setVisible(true);
+		System.out.println("Teste3!!!");
 	}
 
 	public void constroitelainicial() {
