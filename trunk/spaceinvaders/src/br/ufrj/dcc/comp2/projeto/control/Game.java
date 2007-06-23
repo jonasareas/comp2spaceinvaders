@@ -1,4 +1,4 @@
-package control;
+package br.ufrj.dcc.comp2.projeto.control;
 
 import java.util.*;
 
