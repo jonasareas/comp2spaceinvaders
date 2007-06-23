@@ -20,13 +20,24 @@ public class Jogo extends Thread {
 	public TreeMap<Integer,Integer> aliensMap;
 	public int shipX, shipY; */
 
+	public Jogo() {
+	}
+	
+	public Jogo(Tela tela) {
+		this.tela = tela;
+	}
+	
 	public void run() {
 		this.regras = new ControleRegras();
 		this.nave = new Nave(regras);
 		this.atualizador = new AtualizaPosicao(regras);
 		this.painel = new Painel(this.nave, regras);
 		this.teclado = new Teclado(this.nave);
-		this.tela = new Tela(this.painel, this.teclado);
+		
+		if (this.tela == null) {
+			this.tela = new Tela(this.painel, this.teclado);
+		}
+		
 		this.repintor = new Repinta(this.tela, this.painel);
 
 		this.teclado.start();
