@@ -4,7 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Image;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class TesteNave extends JPanel{
 	
