@@ -1,7 +1,12 @@
 package br.ufrj.dcc.comp2.testeprojeto;
 
-import javax.swing.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class TelaMenu extends JFrame{
 
