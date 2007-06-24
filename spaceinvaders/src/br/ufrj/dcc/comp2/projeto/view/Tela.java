@@ -33,6 +33,7 @@ public class Tela extends JFrame implements Runnable {
 		this.setBounds(0, 0, 800, 600);
 		this.add(painel);
 		this.addKeyListener(teclado);
+		this.setResizable(false);
 		this.setVisible(true);
 	}
 
@@ -99,6 +100,7 @@ public class Tela extends JFrame implements Runnable {
 		frame.setJMenuBar(menu);
 
 		frame.setSize(808,650);
+		frame.setResizable(false);
 		frame.setVisible(true);
 	}
 
