@@ -44,7 +44,9 @@ public class Tela extends JFrame implements Runnable {
 		
 	}
 
-	/*public void constroitelajogo() {
+	/* Analisar esta bobagem quando for jogar para Panels...
+	 * 
+	 *  public void constroitelajogo() {
 		this.addKeyListener(teclado);
 		JFrame teste1 = new JFrame();
 		teste1.getContentPane().add(painel);
