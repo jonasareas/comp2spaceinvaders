@@ -6,11 +6,10 @@
 
 FAZER:
 
-1 - Irei implementar a superclasse "Sprite"  para generalizar o que temos em Nave, Alien e Tiro. Será uma classe abstrata, que estou fazendo agora.
+1 - Irei implementar a superclasse "Sprite"  para generalizar o que temos em Nave, Alien e Tiro. SerÃ¡ uma classe abstrata, que estou fazendo agora.
 
 2 - Temos que organizar os tiros em uma Collection e definir quantos tiros podemos dar por vez.
 
 3 - Temos que juntar a classe Tela e a classe Screen.
 
-4 - Temos que padronizar, se o nome de nossas classes serão em Portugues ou em Inglês... =P
-
+4 - Temos que padronizar, se o nome de nossas classes serÃ£o em Portugues ou em InglÃªs... =P
