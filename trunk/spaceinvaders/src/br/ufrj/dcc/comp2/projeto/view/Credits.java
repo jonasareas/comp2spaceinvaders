@@ -27,6 +27,7 @@ public class Credits extends JPanel implements Runnable {
 		frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		botao_Fechar.addActionListener(new botao_Fechar_Listener());
 
+		frame.setResizable(false);
 		frame.setSize(800,600);
 		frame.setVisible(true);
 	}
