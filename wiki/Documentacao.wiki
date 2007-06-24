@@ -1,27 +1,27 @@
-Pagina para que tratemos dos assuntos de documentaÁ„o
+Pagina para que tratemos dos assuntos de documenta√ß√£o
 
-= AlteraÁıes =
+= Altera√ß√µes =
 
 *09/06/2007* - *12:52* - _Marcelo_
 
-O Xico me envio umas alteraÁıes, porÈm acho q o email dele veio incompleto...
-Sugiro tb segunda finalizarmos juntos as alteraÁıes necess·rias.
+O Xico me envio umas altera√ß√µes, por√©m acho q o email dele veio incompleto...
+Sugiro tb segunda finalizarmos juntos as altera√ß√µes necess√°rias.
 
 *09/06/2007* - *11:35* - _Bola_
 
-Documentos de vis„o de negÛcio(Do Xico) e de Use Cases(do Marcelo) fundidos em um sÛ, chamado documentacao_space_invaders. Leiam, e alterem o que estiver errado.
+Documentos de vis√£o de neg√≥cio(Do Xico) e de Use Cases(do Marcelo) fundidos em um s√≥, chamado documentacao_space_invaders. Leiam, e alterem o que estiver errado.
 
-P.S. -> J· est· 90% formatado, ent„o, se precisarmos entregar esse documento È sÛ mudar uma ou outra coisinha, passar pra PDF e enviar. ;)
+P.S. -> J√° est√° 90% formatado, ent√£o, se precisarmos entregar esse documento √© s√≥ mudar uma ou outra coisinha, passar pra PDF e enviar. ;)
 
 *06/06/2007* - *22:05* - _Xico_
 
-Estou disponibilizando para download tambÈm o documento de vis„o de negÛcio pra vocÍs verem...... Qualquer modificaÁ„o, atualizem no download e postem aki.....
+Estou disponibilizando para download tamb√©m o documento de vis√£o de neg√≥cio pra voc√™s verem...... Qualquer modifica√ß√£o, atualizem no download e postem aki.....
 
-arquivo: Documento de vis„o de negÛcio - Space Invaders.doc
+arquivo: Documento de vis√£o de neg√≥cio - Space Invaders.doc
 
 *06/06/2007* - *11:30* - _Xico_
 
-pessoal.... criei o primeiro diagrama de classes do nosso projeto.... ainda est· bem primitivo, pois n„o temos os casos de uso.....
-Estou colocando na parte de downloads o JUDE(editor para diagramas de classes, use-cases... enfim..... È um bom programa....
-TambÈm estou colocando o arquivo que eu criei(Class Diagram.jude), para que todos possam ter e alterar.....
-Estou trabalhando na parte de controle e vista do projeto tambÈm...... espero acabar isso ainda hj....
+pessoal.... criei o primeiro diagrama de classes do nosso projeto.... ainda est√° bem primitivo, pois n√£o temos os casos de uso.....
+Estou colocando na parte de downloads o JUDE(editor para diagramas de classes, use-cases... enfim..... √© um bom programa....
+Tamb√©m estou colocando o arquivo que eu criei(Class Diagram.jude), para que todos possam ter e alterar.....
+Estou trabalhando na parte de controle e vista do projeto tamb√©m...... espero acabar isso ainda hj....
