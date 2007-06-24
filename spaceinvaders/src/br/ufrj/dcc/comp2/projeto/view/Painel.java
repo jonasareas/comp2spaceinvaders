@@ -30,8 +30,9 @@ public class Painel extends JPanel {
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());			
 		
 		if (desenho == null){
-			if(regras.getTiro() != null)
+			if(regras.getTiro() != null) {
 				g.drawImage(regras.getTiro().getImagem(), regras.getTiro().getX(), regras.getTiro().getY(), null);
+			}
 			g.drawImage(nave.getImagem(), nave.getX(), nave.getY(), null);
 		}
 		else {
