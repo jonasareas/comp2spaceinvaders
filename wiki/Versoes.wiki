@@ -1,84 +1,84 @@
-#An˙ncios das alteraÁıes nas versıes do projeto
+#An√∫ncios das altera√ß√µes nas vers√µes do projeto
 
 
 = Aviso =
 
-N„o mais criar projetos novos no repositÛrio!!!!
+N√£o mais criar projetos novos no reposit√≥rio!!!!
 
-= AlteraÁıes =
+= Altera√ß√µes =
 
 *23/06/2007* - *16:01 - _Jonas_
 
-  * Colocado no repositÛrio o que foi feito no LCI.
+  * Colocado no reposit√≥rio o que foi feito no LCI.
 
-ATEN«√O:
+ATEN√á√ÉO:
 
-1 - A classe Game.java foi substituÌda pela classe Jogo.java
+1 - A classe Game.java foi substitu√≠da pela classe Jogo.java
 
-2 - A classe Keyboard.java foi substituÌda pela classe Teclado.java
+2 - A classe Keyboard.java foi substitu√≠da pela classe Teclado.java
 
-3 - A classe Screen.java AINDA N√O foi substituÌda pela classe Tela.java, pois existem coisas relacionadas ao menu nela. O mais indicado para fazer essa substituiÁ„o È o Bola.
+3 - A classe Screen.java AINDA N√ÉO foi substitu√≠da pela classe Tela.java, pois existem coisas relacionadas ao menu nela. O mais indicado para fazer essa substitui√ß√£o √© o Bola.
 
-4 - Reparem que classes que devem instanciar um objeto de uma classe que n„o pertence ao mesmo pacote, devem importar esta classe. Acho que, por conveniÍncia, quando formos dar tla import, coloquemos "import ....<Nome do Pacote>.<asterisco>", como foi feito, por exemplo na classe "Jogo.java"
+4 - Reparem que classes que devem instanciar um objeto de uma classe que n√£o pertence ao mesmo pacote, devem importar esta classe. Acho que, por conveni√™ncia, quando formos dar tla import, coloquemos "import ....<Nome do Pacote>.<asterisco>", como foi feito, por exemplo na classe "Jogo.java"
 
 *09/06/2007* - *23:04 - _Jonas_
 
-Teste de Movimento da Nave ConcluÌdo... 
+Teste de Movimento da Nave Conclu√≠do... 
 Adicionado TesteMovSemListener (auto-explicativo), TesteMovComListener (auto-explicativo), e KeyEventDemo (exemplo bem legal q axei na API do java...)
 
-Amanh„ irei adequar este teste de movimento de acordo com o MVC, colocando os mÈtodos nas respectivas classes e pacotes q pertencem...
+Amanh√£ irei adequar este teste de movimento de acordo com o MVC, colocando os m√©todos nas respectivas classes e pacotes q pertencem...
 
-E ainda... SÛ consegui fazer a movimentaÁ„o colocando um TextField no frame... Ainda n„o sei como posso adicionar um listener (ou melhor, em que), para assim poder fazer a movimentaÁ„o sem ter q adicionar este elemento...
+E ainda... S√≥ consegui fazer a movimenta√ß√£o colocando um TextField no frame... Ainda n√£o sei como posso adicionar um listener (ou melhor, em que), para assim poder fazer a movimenta√ß√£o sem ter q adicionar este elemento...
 
 
 *09/06/2007* - *15:07* - _Bola_
 
-  * TesteProjeto: Os frames se fecham quando apertam o bot„o fechar, ou clicando pelo menu. Mas infelizmente ainda n„o consegui fazer a tela congelar enquanto est· em outra.
+  * TesteProjeto: Os frames se fecham quando apertam o bot√£o fechar, ou clicando pelo menu. Mas infelizmente ainda n√£o consegui fazer a tela congelar enquanto est√° em outra.
 
 *07/06/2007* - *19:22* - _Bola_
 
-  * AlteraÁıes do xico movidas para o local antigo do projeto. Voltemos a usar o antigo(spaceinvaders), agora com as implementaÁıes do Xico.
+  * Altera√ß√µes do xico movidas para o local antigo do projeto. Voltemos a usar o antigo(spaceinvaders), agora com as implementa√ß√µes do Xico.
 
-  * Tentando descobrir como apagar aquele monte de projetos in˙teis que fizemos a toa l· no trunk.
+  * Tentando descobrir como apagar aquele monte de projetos in√∫teis que fizemos a toa l√° no trunk.
 
 *06/06/2007* - *16:30* - _Xico_
 
-  * Alguns atributos e mÈtodos adicionados ao novo projeto.
+  * Alguns atributos e m√©todos adicionados ao novo projeto.
 
 *06/06/2007* - *11:20* - _Xico_
 
   * Criei um projeto novo (ProjetoSpaceInvaders) para ser o oficial.....
-Antes que vocÍs me xinguem, eu tentei fazer o que eu queria no atual, mas n„o consegui pelo seguinte motivo:
+Antes que voc√™s me xinguem, eu tentei fazer o que eu queria no atual, mas n√£o consegui pelo seguinte motivo:
 
-  * J· existem 2 pacotes no projeto atual e nÛs precisamos de 3 pacotes (model, control, view) que deveriam ser criados dentro do pacote '......projeto'
-    O problema: N„o d· pra criar pacote detro de pacote.
+  * J√° existem 2 pacotes no projeto atual e n√≥s precisamos de 3 pacotes (model, control, view) que deveriam ser criados dentro do pacote '......projeto'
+    O problema: N√£o d√° pra criar pacote detro de pacote.
     
 Enfim... criei esse....
 
-Por causa disso, sugiro que a gente passe a usar o antigo sÛ como teste e esse sÛ como oficial...
+Por causa disso, sugiro que a gente passe a usar o antigo s√≥ como teste e esse s√≥ como oficial...
 
 *04/06/2007* - *22:45* - _Bola_
 
-  * Classe TesteJMenu morreu. Virou TelaMenu. Junto com TelaMenu vieram TelaRanking e TelaCreditos. Como podem ver, j· È uma preparaÁ„o pras classes que ser„o as telas dos jogos. Ainda n„o joguei pro projeto em si por trÍs motivos:
-  1 - Ainda n„o temos os textos para elas.
-  2 - Eu n„o sei ainda como se faz para fechar uma janela atravÈs de instruÁ„o de bot„o.
+  * Classe TesteJMenu morreu. Virou TelaMenu. Junto com TelaMenu vieram TelaRanking e TelaCreditos. Como podem ver, j√° √© uma prepara√ß√£o pras classes que ser√£o as telas dos jogos. Ainda n√£o joguei pro projeto em si por tr√™s motivos:
+  1 - Ainda n√£o temos os textos para elas.
+  2 - Eu n√£o sei ainda como se faz para fechar uma janela atrav√©s de instru√ß√£o de bot√£o.
   3 - Estou estudando algo que trave o outro frame enquanto um estiver aberto(O Cleiton me cantou a pedra, estou pesquisando agora).
-  Se alguÈm souber algo disso, colocar por favor na pagina de duvidas...
+  Se algu√©m souber algo disso, colocar por favor na pagina de duvidas...
 
 *04/06/2007* - *19:12* - _Bola_
 
-  * Uma alteraÁ„o estrutural: quando formos fazer testes com classes experimentais, favor inserirem na package br.ufrj.dcc.comp2.testeprojeto. Assim deixamos a outra package apenas para as classes que efetivamente far„o parte do programa, e pra package de teste, nossas viagens com o Java. ;)
+  * Uma altera√ß√£o estrutural: quando formos fazer testes com classes experimentais, favor inserirem na package br.ufrj.dcc.comp2.testeprojeto. Assim deixamos a outra package apenas para as classes que efetivamente far√£o parte do programa, e pra package de teste, nossas viagens com o Java. ;)
 
 *04/06/2007* - *17:40* - _Jonas_
 
  * Criadas algumas classes para teste de imagem.
-   TesteMovimento e MyDrawPanel funcionam juntas, dndo uma idÈia de desenho e de eventos (bot„o)
-   TesteNave -> era pra desenhar a nave na tela, mas naum consegui de jeito nenhum... =S Quem puder dar uma olhada... subi a figura da nave tambÈm...
+   TesteMovimento e MyDrawPanel funcionam juntas, dndo uma id√©ia de desenho e de eventos (bot√£o)
+   TesteNave -> era pra desenhar a nave na tela, mas naum consegui de jeito nenhum... =S Quem puder dar uma olhada... subi a figura da nave tamb√©m...
 
 *03/06/2007* - *23:39* - _Bola_
 
-  * Criada classe TesteJMenu com um teste meu de como ser· o menu. Pretendo atÈ amanh„ fazer funcionar listeners para as opÁıes abrirem novas janelas e fechar o programa.
+  * Criada classe TesteJMenu com um teste meu de como ser√° o menu. Pretendo at√© amanh√£ fazer funcionar listeners para as op√ß√µes abrirem novas janelas e fechar o programa.
 
 *02/06/2007* - *17:44* - _Bola_
 
-  * Criadas as classes Objeto, Nave, Alien, Chefao, Asteroide, ainda sem mÈtodos.
+  * Criadas as classes Objeto, Nave, Alien, Chefao, Asteroide, ainda sem m√©todos.
