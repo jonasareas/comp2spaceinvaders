@@ -26,11 +26,14 @@ public class Tela extends JFrame implements Runnable {
 	Image universo = new ImageIcon("./imagens/universotela.JPG").getImage();
 
 	public Tela(Painel painel, Teclado teclado) {
-		this.painel = painel;
-		this.teclado = teclado;
-		System.out.println("Teste1!!!");
-		this.constroitelajogo();
-		System.out.println("Teste4!!!");
+		/*this.painel = painel;
+		this.teclado = teclado;*/
+		//this.constroitelajogo();
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setBounds(0, 0, 800, 600);
+		this.add(painel);
+		this.addKeyListener(teclado);
+		this.setVisible(true);
 	}
 
 	public Tela() {
@@ -43,14 +46,12 @@ public class Tela extends JFrame implements Runnable {
 		teste.constroitelainicial();
 	}
 
-	public void constroitelajogo() {
-		System.out.println("Teste2!!!");
+	/*public void constroitelajogo() {
 		this.addKeyListener(teclado);
 		JFrame teste1 = new JFrame();
 		teste1.getContentPane().add(painel);
 		teste1.setSize(808,650);
 		teste1.setVisible(true);
-		System.out.println("Teste3!!!");
 		//frame.getContentPane().remove(paineldesenho);
 		//frame.getContentPane().add(painel);
 		//frame.getContentPane().repaint();
@@ -58,14 +59,12 @@ public class Tela extends JFrame implements Runnable {
 	}
 	
 	public void vaitela(Painel painel, Teclado teclado) {
-		System.out.println("Teste2!!!");
 		this.addKeyListener(teclado);
 		JFrame teste1 = new JFrame();
 		teste1.getContentPane().add(painel);
 		teste1.setSize(808,650);
 		teste1.setVisible(true);
-		System.out.println("Teste3!!!");
-	}
+	}*/
 
 	public void constroitelainicial() {
 		Painel painel = new Painel(universo);
@@ -95,7 +94,7 @@ public class Tela extends JFrame implements Runnable {
 
 		menu.add(menuJogo);
 
-		frame.getContentPane().add(painel);
+		frame.add(painel);
 
 		frame.setJMenuBar(menu);
 
