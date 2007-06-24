@@ -34,18 +34,17 @@ public class Jogo extends Thread {
 		this.painel = new Painel(this.nave, regras);
 		this.teclado = new Teclado(this.nave);
 		
-		if (this.tela == null) {
+		/*if (this.tela == null) {*/
 			this.tela = new Tela(this.painel, this.teclado);
-		}
-		else {
+		/*} else {
 			this.tela.vaitela(this.painel, this.teclado);
-		}
+		}*/
 		
 		this.repintor = new Repinta(this.tela, this.painel);
 
-		this.teclado.start();
+		this.teclado.start();
 		this.repintor.start();
 		this.atualizador.start();
-		this.regras.start();
+		this.regras.start();;
 	}
 }
