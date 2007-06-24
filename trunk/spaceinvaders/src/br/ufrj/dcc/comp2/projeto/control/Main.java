@@ -7,7 +7,7 @@ public class Main {
 	static Tela teste = new Tela();
 	
 	public static void main(String[] args) {
-		teste.constroitelainicial(teste);
+		teste.constroiTelaInicial(teste);
 	}
 
 }
