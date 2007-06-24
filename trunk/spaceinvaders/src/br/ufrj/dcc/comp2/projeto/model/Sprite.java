@@ -1,19 +1,26 @@
 package br.ufrj.dcc.comp2.projeto.model;
 
 import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Sprite {
 	protected int x;
 	protected int y;
 	protected Image imagem;
-
-	/*
-	public Sprite(String nomeArq, int x, int y) {
+	protected String file;
+	
+	public Sprite(String nomeArq) {
 		this.file = nomeArq;
-		this.x = x;
-		this.y = y;
+				
+		try {
+			imagem = ImageIO.read(new File(file));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
-	 */
 
 	public int getX() {
 		return x;
