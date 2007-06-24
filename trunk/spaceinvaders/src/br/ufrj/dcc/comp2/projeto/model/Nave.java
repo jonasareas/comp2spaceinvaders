@@ -1,6 +1,5 @@
 package br.ufrj.dcc.comp2.projeto.model;
 
-import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 
@@ -8,7 +7,7 @@ import javax.imageio.ImageIO;
 
 import br.ufrj.dcc.comp2.projeto.control.*;
 
-public class Nave extends ExplodedSprite{
+public class Nave extends ExplodedSprite {
 	private ControleRegras regras;
 	
 	public Nave(ControleRegras regras) {
