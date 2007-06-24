@@ -19,10 +19,12 @@ public class Tela extends JFrame implements Runnable {
 
 	private static final long serialVersionUID = 1L;
 
-	JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
 	Painel painel;
 	Teclado teclado;
-	static Tela teste = new Tela();
+	
+	private JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
+	private Tela telaAtual;
+
 	Image universo = new ImageIcon("./imagens/universotela.JPG").getImage();
 
 	public Tela(Painel painel, Teclado teclado) {
@@ -43,9 +45,7 @@ public class Tela extends JFrame implements Runnable {
 	public void run() {
 	}
 
-	public static void main(String[] args) {
-		teste.constroitelainicial();
-	}
+
 
 	/*public void constroitelajogo() {
 		this.addKeyListener(teclado);
@@ -67,7 +67,9 @@ public class Tela extends JFrame implements Runnable {
 		teste1.setVisible(true);
 	}*/
 
-	public void constroitelainicial() {
+	public void constroitelainicial(Tela teste) {
+		telaAtual = teste;
+		
 		Painel painel = new Painel(universo);
 		JMenuBar menu = new JMenuBar();
 
@@ -106,7 +108,7 @@ public class Tela extends JFrame implements Runnable {
 
 	class item1Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			Jogo game = new Jogo(teste);
+			Jogo game = new Jogo(telaAtual);
 			game.start();
 		}
 	}
@@ -136,4 +138,6 @@ public class Tela extends JFrame implements Runnable {
 			System.exit(0);
 		}
 	}
+
+
 }
