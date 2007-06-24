@@ -32,7 +32,7 @@ public class Painel extends JPanel {
 		if (desenho == null){
 			if(regras.getTiro() != null)
 				g.drawImage(regras.getTiro().getImagem(), regras.getTiro().getX(), regras.getTiro().getY(), null);
-			g.drawImage(nave.getNave(), nave.getX(), nave.getY(), null);
+			g.drawImage(nave.getImagem(), nave.getX(), nave.getY(), null);
 		}
 		else {
 			g.setColor(Color.white);

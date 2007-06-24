@@ -1,29 +1,40 @@
 package br.ufrj.dcc.comp2.projeto.model;
 
+import java.awt.Image;
+
 public class Sprite {
-	public int x;
-	public int y;
-	public String file;
-	
+	protected int x;
+	protected int y;
+	protected Image imagem;
+	private String file;
+
+
+	/*
 	public Sprite(String nomeArq, int x, int y) {
 		this.file = nomeArq;
 		this.x = x;
 		this.y = y;
 	}
+	 */
 
 	public int getX() {
-		return this.x;
+		return x;
 	}
 
-	public void setX(int x) {
-		this.x = x;
+	public void setX(int posicaonova) {
+		this.x = posicaonova;
 	}
 
 	public int getY() {
-		return this.y;
+		return y;
 	}
 
-	public void setY(int y) {
-		this.y = y;
+	public void setY(int posicaonova) {
+		this.y = posicaonova;
 	}
+
+	public Image getImagem() {
+		return this.imagem;
+	}
+
 }
