@@ -1,9 +1,9 @@
-#Pra confirmar que todos instalaram e jah est√£o utilizando o SVN...
+#Pra confirmar que todos instalaram e jah est„o utilizando o SVN...
 
 Jonas: Aew Galera...
-J√° instalei e testei meu SVN... Sugiro o seguinte... Para confirmar que sua instala√ß√£o est√° OK, baixem o projeto "teste_repositorio", modifiquem o "teste_class" colocando mais um "system.out.println" dizendo q vc j√° est√° utilizando o SVN tb, e depois suba ele de novo... s√≥ olhar l√° em source como eu fiz..
-Qualquer d√∫vida, liguem pra mim ou pro Bola! =P
+J· instalei e testei meu SVN... Sugiro o seguinte... Para confirmar que sua instalaÁ„o est· OK, baixem o projeto "teste_repositorio", modifiquem o "teste_class" colocando mais um "system.out.println" dizendo q vc j· est· utilizando o SVN tb, e depois suba ele de novo... sÛ olhar l· em source como eu fiz..
+Qualquer d˙vida, liguem pra mim ou pro Bola! =P
 
-Bola: Como fui eu quem fis o class do teste, e to sincronizando direto, sei que o meu SVN t√° funfando. =)
+Bola: Como fui eu quem fis o class do teste, e to sincronizando direto, sei que o meu SVN t· funfando. =)
 
 

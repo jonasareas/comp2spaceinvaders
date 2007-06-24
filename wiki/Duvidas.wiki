@@ -1,24 +1,24 @@
-#Para discutirmos quest√µes relativas ao projeto, e tirarmos d√∫vidas
+#Para discutirmos questıes relativas ao projeto, e tirarmos d˙vidas
 
-= D√∫vidas de Projeto =
+= D˙vidas de Projeto =
 
 _Respostas as duvidas do Xico:_
 
 1 - Tanto faz as threads estarem no controlador Jogo ou fora dele (nesse caso teria q instancialas no controlador jogo). Acho mais simples elas serem classes internas msm.
 
-2 - A classe keyboard s√≥ verifica as a√ß√µes do teclado em loop msm.  
+2 - A classe keyboard sÛ verifica as aÁıes do teclado em loop msm.  
 
 
 _ Perguntas: 
-  1 - Como se faz para fechar uma janela atrav√©s de instru√ß√£o?
+  1 - Como se faz para fechar uma janela atravÈs de instruÁ„o?
   2 - Como fazer com que trave o outro frame enquanto um estiver aberto? _
 
-Jonas: Bola, ponto 1 vou procurar, mas com rela√ß√£o ao ponto 2 axo q a pergunta deveria ser "Como abrir um frame por cima do outro?" - Quest√£o discutida na monitoria... (lance do painel e talz...
+Jonas: Bola, ponto 1 vou procurar, mas com relaÁ„o ao ponto 2 axo q a pergunta deveria ser "Como abrir um frame por cima do outro?" - Quest„o discutida na monitoria... (lance do painel e talz...
 
 = Monitor presente =
 
 _Pergunta: Devemos colocar o monitor como membro do grupo?_
 
-Bola: Sim. Assim ele pode acompanhar o projeto, ver quais s√£o nossas d√∫vidas que t√£o rolando, ver como est√° nosso andamento etc. Acho favor√°vel a id√©ia dele estar aqui tamb√©m.
+Bola: Sim. Assim ele pode acompanhar o projeto, ver quais s„o nossas d˙vidas que t„o rolando, ver como est· nosso andamento etc. Acho favor·vel a idÈia dele estar aqui tambÈm.
 
-Jonas: Pode ser... S√≥ sinceramente axo dificil q o monitor (qqer q seja) disponibilize mto tempo pra isso.. afinal tb s√£o alunos, e tb precisam estudar pras provas...
+Jonas: Pode ser... SÛ sinceramente axo dificil q o monitor (qqer q seja) disponibilize mto tempo pra isso.. afinal tb s„o alunos, e tb precisam estudar pras provas...

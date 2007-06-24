@@ -2,6 +2,15 @@
 
 = A Fazer =
 
-Gnt precisamos definir o qto antes o q cada um vai fazer!
+*Colocado em 23/07/2007:* - _Jonas_
 
-Se n√£o o projeto vai ficar cada vez mais dif√≠cil do q j√° t√°!!
+FAZER:
+
+1 - Irei implementar a superclasse "Sprite"  para generalizar o que temos em Nave, Alien e Tiro. Ser· uma classe abstrata, que estou fazendo agora.
+
+2 - Temos que organizar os tiros em uma Collection e definir quantos tiros podemos dar por vez.
+
+3 - Temos que juntar a classe Tela e a classe Screen.
+
+4 - Temos que padronizar, se o nome de nossas classes ser„o em Portugues ou em InglÍs... =P
+
