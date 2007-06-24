@@ -16,15 +16,12 @@ import br.ufrj.dcc.comp2.projeto.view.Teclado;
 
 @SuppressWarnings("serial")
 public class Tela extends JFrame implements Runnable {
-
 	private static final long serialVersionUID = 1L;
-
 	Painel painel;
 	Teclado teclado;
 	
 	private JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
 	private Tela telaAtual;
-
 	Image universo = new ImageIcon("./imagens/universotela.JPG").getImage();
 
 	public Tela(Painel painel, Teclado teclado) {
@@ -67,7 +64,7 @@ public class Tela extends JFrame implements Runnable {
 		teste1.setVisible(true);
 	}*/
 
-	public void constroitelainicial(Tela teste) {
+	public void constroiTelaInicial(Tela teste) {
 		telaAtual = teste;
 		
 		Painel painel = new Painel(universo);
