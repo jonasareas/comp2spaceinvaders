@@ -1,12 +1,13 @@
 package br.ufrj.dcc.comp2.projeto.model;
 
-import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Tiro extends Sprite{
+public class Tiro extends Sprite {
+	
+
 	
 	public Tiro(int x, int y) {
 		try {
@@ -17,6 +18,7 @@ public class Tiro extends Sprite{
 		}
 		this.x = x-this.getImagem().getWidth(null);
 		this.y = y-this.getImagem().getHeight(null);
+		
 	}
 
 	public void goUp() {

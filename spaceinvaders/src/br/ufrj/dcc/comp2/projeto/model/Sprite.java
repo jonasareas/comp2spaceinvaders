@@ -6,8 +6,6 @@ public class Sprite {
 	protected int x;
 	protected int y;
 	protected Image imagem;
-	private String file;
-
 
 	/*
 	public Sprite(String nomeArq, int x, int y) {
