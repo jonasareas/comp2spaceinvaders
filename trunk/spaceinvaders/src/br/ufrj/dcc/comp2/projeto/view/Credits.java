@@ -1,9 +1,11 @@
 package br.ufrj.dcc.comp2.projeto.view;
 
 import java.awt.BorderLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -17,15 +19,15 @@ public class Credits extends JPanel implements Runnable {
 	}
 
 	public void constroiTela() {
+		Image universo = new ImageIcon("./imagens/universocriadores.JPG").getImage();
+		Painel painel = new Painel(universo);
 		JButton botao_Fechar = new JButton("Fechar");
-
+		
+		frame.add(painel);
 		frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		botao_Fechar.addActionListener(new botao_Fechar_Listener());
 
-		frame.setSize(200,200);
-		frame.setVisible(true);
-
-		frame.setSize(200,200);
+		frame.setSize(800,600);
 		frame.setVisible(true);
 	}
 	class botao_Fechar_Listener implements ActionListener {
