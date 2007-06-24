@@ -1,8 +1,8 @@
 #summary One-sentence summary of this page.
 **************
-essa p·gina wiki serve de teste, para testarmos as funcionalidades do wiki e evitarmos de fazer merda quando formos escrever nas p·ginas.
+essa p√°gina wiki serve de teste, para testarmos as funcionalidades do wiki e evitarmos de fazer merda quando formos escrever nas p√°ginas.
 
-Editem a vontade, criem o que quiserem. Apaguem o que quiser. Apenas mantenham esse b·sico que est· entre asteriscos.
+Editem a vontade, criem o que quiserem. Apaguem o que quiser. Apenas mantenham esse b√°sico que est√° entre asteriscos.
 
 = Introduction =
 
