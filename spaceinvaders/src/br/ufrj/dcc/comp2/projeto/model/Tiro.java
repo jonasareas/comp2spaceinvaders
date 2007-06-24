@@ -6,10 +6,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Tiro {
-	private int x;
-	private int y;
-	private Image imagem;
+public class Tiro extends Sprite{
 	
 	public Tiro(int x, int y) {
 		try {
@@ -22,17 +19,6 @@ public class Tiro {
 		this.y = y-this.getImagem().getHeight(null);
 	}
 
-	public Image getImagem() {
-		return this.imagem;
-	}
-
-	public int getX() {
-		return x;
-	}
-	public int getY() {
-		return y;
-	}
-	
 	public void goUp() {
 		this.y -= 1;
 	}
