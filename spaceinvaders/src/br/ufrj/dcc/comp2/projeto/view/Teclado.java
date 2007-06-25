@@ -8,7 +8,6 @@ import br.ufrj.dcc.comp2.projeto.model.*;
 public class Teclado extends Thread implements KeyListener  {
 	private boolean left;
 	private boolean right;
-	private boolean fire;
 	private Nave nave;
 
 	public Teclado(Nave nave) {
@@ -26,10 +25,8 @@ public class Teclado extends Thread implements KeyListener  {
 		if (tecla ==  KeyEvent.VK_RIGHT) {
 			this.right = true;
 		}
-			
-		if (tecla == KeyEvent.VK_SPACE) {
-			this.fire = true;
-		}
+		
+
 	}
 
 	public void keyReleased(KeyEvent arg0) {
@@ -42,22 +39,17 @@ public class Teclado extends Thread implements KeyListener  {
 		if (tecla ==  KeyEvent.VK_RIGHT) {
 			this.right = false;
 		}
-			
 		if (tecla == KeyEvent.VK_SPACE) {
-			this.fire = false;
-		}
-	}
+			this.nave.fire();
+		}		
+  	}
 
 	public void keyTyped(KeyEvent arg0) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void run() {
 		while(true){
-			if(fire==true) {
-				this.nave.fire();
-			}
 			if(left==true) {
 				this.nave.goLeft();
 			}

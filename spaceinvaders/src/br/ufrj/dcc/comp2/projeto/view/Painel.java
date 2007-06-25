@@ -3,6 +3,7 @@ package br.ufrj.dcc.comp2.projeto.view;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.util.Iterator;
 
 import javax.swing.JPanel;
 
@@ -30,8 +31,10 @@ public class Painel extends JPanel {
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());			
 		
 		if (desenho == null){
-			if(regras.getTiro() != null) {
-				g.drawImage(regras.getTiro().getImagem(), regras.getTiro().getX(), regras.getTiro().getY(), null);
+			Iterator<Tiro> it = regras.getTiros().iterator();
+			while (it.hasNext()) {
+				Tiro tiro = it.next();
+				g.drawImage(tiro.getImagem(), tiro.getX(), tiro.getY(), null);
 			}
 			g.drawImage(nave.getImagem(), nave.getX(), nave.getY(), null);
 		}
