@@ -7,7 +7,13 @@ Não mais criar projetos novos no repositório!!!!
 
 = Alterações =
 
-*23/06/2007* - *16:01 - _Jonas_
+*25/06/2007* - *18:00* - _Jonas_
+
+
+  * Commitei nossa últimas mudanças, realizadas no LCI nesta terça.
+Modifiquei na classe Painel, onde usávamso um for-each, por um iterador, para padronizar. Ainda ocorrem alguns exceções de "concorrência de threads", mas estas naum estão atrapalhando no jogo.
+
+*23/06/2007* - *16:01* - _Jonas_
 
   * Colocado no repositório o que foi feito no LCI.
 
