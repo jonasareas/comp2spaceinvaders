@@ -2,6 +2,15 @@
 
 = A Fazer =
 
+*Colocado em 25/07/2007:* - _Jonas_
+
+Senhores,
+
+Commitei nossa últimas mudanças, realizadas no LCI nesta terça.
+Modifiquei na classe Painel, onde usávamso um for-each, por um iterador, para padronizar. Ainda ocorrem alguns exceções de "concorrência de threads", mas estas naum estão atrapalhando no jogo.
+
+A fazer, até nos livrarmos da prova, axo q tem só a modificação do Bola nos painéis. Pelo menos até quinta estamos nessa.
+
 *Colocado em 23/07/2007:* - _Jonas_
 
 FAZER:
