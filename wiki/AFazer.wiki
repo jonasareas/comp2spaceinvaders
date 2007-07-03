@@ -9,7 +9,7 @@ Então:
 
 Nosso "TO-DO" atual:
 
-Vista, Imagens, Painéis...
+*Vista, Imagens, Painéis...*
 
 1 - Fazer jogo, créditos abrirem no mesmo frame
 
@@ -17,7 +17,7 @@ Vista, Imagens, Painéis...
 
 3 - Ajeitar imagens de nave, alien, tiro... (na minha opiniçao, estão meio fracas)
 
-Colisão, Aliens, Nave, Tiros...
+*Colisão, Aliens, Nave, Tiros...*
 
 1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão
 
@@ -29,7 +29,7 @@ Colisão, Aliens, Nave, Tiros...
 
 5 - Ver o porque dos erros de "java.util.ConcurrentModificationException"
 
-Jogo em si...
+*Jogo em si...*
 
 1 - Terminando todas as detecções de colisão, colocar:
 - Vidas
@@ -44,13 +44,13 @@ Jogo em si...
 
 3 - Fazer o pausa jogo
 
-"outta-game"
+*"Outta-game"*
 
 1 - Organizar o código da forma mais limpa possível
 
 2 - Definir se usaremos o padrão inglês ou português
 
-Extras (só se der tempo, em ordem de importância, na minha opinião)
+*Extras (só se der tempo, em ordem de importância, na minha opinião)*
 
 1 - A nave ter um tiro especial ou algum tipo de bomba, que terá número limitado, mas é mais poderoso que o tiro normal (pus este em primeiro pois é o mais fácil de todos, e axo que dá um efeito legal para o jogo)
 
