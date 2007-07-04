@@ -35,6 +35,8 @@ public class AtualizaPosicao extends Thread {
 					System.out.println("Boom!!!");
 					regras.getTiros().remove(cont);
 					regras.getAliens().remove(i);
+					regras.getPontuacao().aumentaponto();
+					System.out.println(regras.getPontuacao().getpontuacao());
 				}
 			}
 
@@ -49,6 +51,9 @@ public class AtualizaPosicao extends Thread {
 					if ( !(alien.goDown()) ) {
 						regras.getAliens().remove(cont);
 						cont--;
+						regras.getPontuacao().diminuiponto();
+						System.out.println(regras.getPontuacao().getpontuacao());
+
 					}
 				
 					/* ISSO SERIA A COLISAO "ALIEN-TIRO", A PRINCIPIO, DESNECESSARIA!!
