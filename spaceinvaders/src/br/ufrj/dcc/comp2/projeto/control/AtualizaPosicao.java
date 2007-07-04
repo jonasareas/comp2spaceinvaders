@@ -51,7 +51,13 @@ public class AtualizaPosicao extends Thread {
 					if ( !(alien.goDown()) ) {
 						regras.getAliens().remove(cont);
 						cont--;
-						regras.getPontuacao().diminuiponto();
+						if (regras.getPontuacao().getpontuacao() > 0 ) {
+							regras.getPontuacao().diminuiponto();
+						}else {
+							regras.getJogador().perdeVida();
+							System.out.println(regras.getJogador().getVida());
+						}
+						
 						System.out.println(regras.getPontuacao().getpontuacao());
 
 					}
@@ -72,6 +78,8 @@ public class AtualizaPosicao extends Thread {
 					// Colisão alien-nave
 					if (alien.equals(regras.getNave())) {
 						regras.getAliens().remove(cont);
+						regras.getJogador().perdeVida();
+						System.out.println(regras.getJogador().getVida());
 					}
 				}
 			}

@@ -13,6 +13,7 @@ public class Jogo extends Thread {
 	public ControleRegras regras;
 	public AtualizaPosicao atualizador;
 	public Score pontuacao;
+	public Player jogador;
 	
 	public Jogo() {
 	}
@@ -26,6 +27,8 @@ public class Jogo extends Thread {
 		this.nave = new Nave(regras);
 		this.atualizador = new AtualizaPosicao(regras);
 		this.pontuacao = new Score();
+		this.jogador = new Player();
+		System.out.println(jogador.getVida());
 		
 		atualizador.setPriority(10);
 		
