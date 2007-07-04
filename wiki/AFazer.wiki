@@ -2,6 +2,19 @@
 
 = A Fazer =
 
+*Colocado em 04/07/2007:* - _Jonas_
+
+To-Do resumida:
+
+1 - pontuação
+2 - vidas
+3 - fases
+4 - recordes
+5 - panels
+6 - chefe
+7 - pause
+8 - explosao
+
 *Colocado em 02/07/2007:* - _Jonas_
 
 Bom gente.. Axo que já está mais do que na hora pra isso né...
