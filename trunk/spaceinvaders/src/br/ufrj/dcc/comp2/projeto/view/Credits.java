@@ -1,5 +1,6 @@
 package br.ufrj.dcc.comp2.projeto.view;
 
+import java.awt.Color;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
@@ -15,10 +16,10 @@ public class Credits extends JPanel implements Runnable {
 	}
 
 	public void constroiTela() {
-		Image universo = new ImageIcon("./imagens/Creditos.png").getImage();
+		Image universo = new ImageIcon("./imagens/Creditos.jpg").getImage();
 		Painel painel = new Painel(universo);
 		//JButton botao_Fechar = new JButton("Fechar");
-		
+		frame.setBackground(Color.BLACK);
 		frame.add(painel);
 		//frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		//botao_Fechar.addActionListener(new botao_Fechar_Listener());
