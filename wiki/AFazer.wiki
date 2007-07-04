@@ -39,7 +39,7 @@ Nosso "TO-DO" atual:
 
 *Colisão, Aliens, Nave, Tiros...*
 
-1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (Bola Fazendo)
+1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (OK}
 
 2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (OK)
 
@@ -48,8 +48,7 @@ Nosso "TO-DO" atual:
 
 4 - Ver o que fazer quando a nave morre (sugiro termos uma barreira que fique na frente dela que não deixe os aliens passar, caso isso seja mais fácil do que o efeito dela ficar piscando)
 
-5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" 
-  -- _Update:_ Não aparecem mais. Não lembro se vocês corrigiram ou não. Bola
+5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" (OK)
 
 *Jogo em si...*
 
