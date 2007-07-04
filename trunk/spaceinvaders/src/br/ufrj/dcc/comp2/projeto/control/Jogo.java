@@ -12,6 +12,7 @@ public class Jogo extends Thread {
 	public Repinta repintor;
 	public ControleRegras regras;
 	public AtualizaPosicao atualizador;
+	public Score pontuacao;
 	
 	public Jogo() {
 	}
@@ -24,6 +25,7 @@ public class Jogo extends Thread {
 		this.regras = new ControleRegras(this);
 		this.nave = new Nave(regras);
 		this.atualizador = new AtualizaPosicao(regras);
+		this.pontuacao = new Score();
 		
 		atualizador.setPriority(10);
 		
