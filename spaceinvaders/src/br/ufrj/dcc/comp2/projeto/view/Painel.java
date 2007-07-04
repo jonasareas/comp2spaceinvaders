@@ -1,7 +1,9 @@
 package br.ufrj.dcc.comp2.projeto.view;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
@@ -47,6 +49,8 @@ public class Painel extends JPanel {
 				g.drawImage(alien.getImagem(), alien.getX(), alien.getY(), null);
 			}
 			g.drawImage(nave.getImagem(), nave.getX(), nave.getY(), null);
+			paintScore((Graphics2D) g);
+			paintLife((Graphics2D) g);
 		}
 		else {
 			g.setColor(Color.white);
@@ -54,5 +58,18 @@ public class Painel extends JPanel {
 		}
 	
 	}
-
+	
+	public void paintScore(Graphics2D g) {
+		g.setFont(new Font("Arial",Font.BOLD,20));
+		g.setPaint(Color.blue);
+		g.drawString("Score:",675,40);
+		g.drawString(regras.getPontuacao().getpontuacao()+"",750,40);
+	}
+	
+	public void paintLife(Graphics2D g) {
+		g.setFont(new Font("Arial",Font.BOLD,20));
+		g.setPaint(Color.red);
+		g.drawString("Vidas:",675,80);
+		g.drawString(regras.getJogador().getVida()+"",750,80);
+	}
 }
