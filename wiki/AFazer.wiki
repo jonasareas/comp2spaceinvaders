@@ -2,30 +2,25 @@
 
 = A Fazer =
 
-*Colocado em 04/07/2007:* - _Jonas_
+*Colocado em 04/07/2007:* - _Marcelo_
 
 To-Do resumida:
 
-1 - pontuação (OK)
+1 - pontuação (Caralho Feito!!!!!!!)
 
-2 - vidas (OK)
+2 - vidas (Caralho Feito!!!!!!!)
 
-3 - fases (Sendo feito por Jonas)
+3 - fases (Caralho Feito!!!!!!!) feito by us exceto Jonas :P
 
-4 - recordes (Sendo feito por Marcelo)
+4 - recordes (classe feita falta integrar no jogo)
 
 5 - panels (Sendo feito por Bola)
 
-6 - chefe
+6 - chefe(se tiver tempo, mas o jogo jah tá mt foda!!!)
 
-7 - pause (Sendo feito por Xico)
+7 - pause (Caralho Feito!!!!!!!)
 
-8 - explosao
-
-*Colocado em 02/07/2007:* - _Jonas_
-
-Bom gente.. Axo que já está mais do que na hora pra isso né...
-Então:
+8 - explosao (Caralho Feito!!!!!!!)
 
 Nosso "TO-DO" atual:
 
@@ -33,56 +28,56 @@ Nosso "TO-DO" atual:
 
 1 - Fazer jogo, créditos abrirem no mesmo frame
 
-2 - Caso não possamos fazer uma imagem com estrelas e passando e talz, colocar uma imagem de fundo para o jogo  (OK)
+2 - Caso não possamos fazer uma imagem com estrelas e passando e talz, colocar uma imagem de fundo para o jogo  (Caralho Feito!!!!!!!)
 
-3 - Ajeitar imagens de nave, alien, tiro... (OK)
+3 - Ajeitar imagens de nave, alien, tiro... (Caralho Feito!!!!!!!)
 
 *Colisão, Aliens, Nave, Tiros...*
 
-1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (OK}
+1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (Caralho Feito!!!!!!!)
 
-2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (OK)
+2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (Caralho Feito!!!!!!!)
 
 3 - Implementar um desenho de explosão quando o tiro bate no alien (julgo ser a ÚNICA coisa "não-exigida" que devemos nos preocupar, obviamente devido a falta de tempo)
-  -- Deixar isso por último. Bola
+  -- (Caralho Feito!!!!!!!)
 
 4 - Ver o que fazer quando a nave morre (sugiro termos uma barreira que fique na frente dela que não deixe os aliens passar, caso isso seja mais fácil do que o efeito dela ficar piscando)
 
-5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" (OK)
+5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" (Caralho Feito!!!!!!!)
 
 *Jogo em si...*
 
 1 - Terminando todas as detecções de colisão, colocar:
-- Vidas
+- Vidas (Caralho Feito!!!!!!!)
 
-- Pontuação
+- Pontuação (Caralho Feito!!!!!!!)
 
-- Dificuldade (reflete a quantidade de naves que descem por vez, e a velocidade que caem)
+- Dificuldade (reflete a quantidade de naves que descem por vez, e a velocidade que caem)(Caralho Feito!!!!!!!)
 
-- Chefão (um só!!!)
+- Chefão (vide acima)
 
 2 - Fazer o recordes
 
-3 - Fazer o pausa jogo
+3 - Fazer o pausa jogo (Caralho Feito!!!!!!!)
 
 *"Outta-game"*
 
-1 - Organizar o código da forma mais limpa possível
+1 - Organizar o código da forma mais limpa possível (by Marcelo)
 
 2 - Definir se usaremos o padrão inglês ou português
-  _Update:_ Padrão Português! Como seria padrão inglês?
+  _Update:_ Padrão Português! Como seria padrão inglês? *Viva a torre de babel!!!*
 
 *Extras (só se der tempo, em ordem de importância, na minha opinião)*
 
-1 - A nave ter um tiro especial ou algum tipo de bomba, que terá número limitado, mas é mais poderoso que o tiro normal (pus este em primeiro pois é o mais fácil de todos, e axo que dá um efeito legal para o jogo)
+1 - A nave ter um tiro especial ou algum tipo de bomba, que terá número limitado, mas é mais poderoso que o tiro normal (pus este em primeiro pois é o mais fácil de todos, e axo que dá um efeito legal para o jogo) *nem fudendo*
 
-2 - Aliens atirando
+2 - Aliens atirando *talvez (falta tempo)*
 
-3 - Nave andando pra frente e pra trás
+3 - Nave andando pra frente e pra trás (tah feita, só bugada)
 
-4 - Asteróides (mais dificeis de destruir do que os aliens, mas dão mais pontos
+4 - Asteróides (mais dificeis de destruir do que os aliens, mas dão mais pontos *Nem fudendo*
 
-5 - Itens como vida, tiros especiais... caindo junto com os aliens e asteróides (ou passando na horizontal, como o original)
+5 - Itens como vida, tiros especiais... caindo junto com os aliens e asteróides (ou passando na horizontal, como o original) *Nem rola*
 
 Senhores,
 VocÊs estão livres para adicionar novos ítens a esta lista (respeitando o tipo de cada coisa), mas peço para POR FAVOR nÃO APAGAREM NENHUM ITEM!!!!
