@@ -14,7 +14,6 @@ public class Score {
 		if (pontuacao > 0) {
 			pontuacao -= 5;
 		}
-		
 	}
 	
 	public int getpontuacao() {
