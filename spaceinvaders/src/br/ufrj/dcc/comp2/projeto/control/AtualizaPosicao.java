@@ -36,6 +36,10 @@ public class AtualizaPosicao extends Thread {
 					regras.getTiros().remove(cont);
 					regras.getAliens().remove(i);
 					regras.getPontuacao().aumentaponto();
+					if (regras.getPontuacao().getpontuacao_acumulada() >= 500) {
+						regras.getJogador().ganhaVida();
+						regras.getPontuacao().zerapontuacaoacumulada();
+					}
 					System.out.println(regras.getPontuacao().getpontuacao());
 				}
 			}
