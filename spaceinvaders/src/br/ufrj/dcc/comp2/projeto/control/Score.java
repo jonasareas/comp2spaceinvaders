@@ -2,33 +2,33 @@ package br.ufrj.dcc.comp2.projeto.control;
 
 public class Score {
 	private int pontuacao;
-	private int pontuacao_acumulada;
+	private int pontuacaoAcumulada;
 	public Score() {
 		pontuacao = 0;
-		pontuacao_acumulada = 0;
+		pontuacaoAcumulada = 0;
 	}
 
-	public void aumentaponto() {
+	public void aumentaPonto() {
 		pontuacao += 15;
-		pontuacao_acumulada += 15;
+		pontuacaoAcumulada += 15;
 	}
 	
-	public void diminuiponto() {
+	public void diminuiPonto() {
 		if (pontuacao > 0) {
 			pontuacao -= 5;
-			pontuacao_acumulada -= 5;
+			pontuacaoAcumulada -= 5;
 		}
 	}
 	
-	public int getpontuacao() {
+	public int getPontuacao() {
 		return pontuacao;
 	}
 	
-	public int getpontuacao_acumulada() {
-		return pontuacao_acumulada;
+	public int getPontuacaoAcumulada() {
+		return pontuacaoAcumulada;
 	}
 	
-	public void zerapontuacaoacumulada() {
-		pontuacao_acumulada = 0;
+	public void zeraPontuacaoAcumulada() {
+		pontuacaoAcumulada = 0;
 	}
 }

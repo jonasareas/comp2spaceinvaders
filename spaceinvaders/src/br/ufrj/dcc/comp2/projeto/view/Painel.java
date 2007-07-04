@@ -60,16 +60,27 @@ public class Painel extends JPanel {
 	}
 	
 	public void paintScore(Graphics2D g) {
-		g.setFont(new Font("Arial",Font.BOLD,20));
+		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.blue);
 		g.drawString("Score:",675,40);
-		g.drawString(regras.getPontuacao().getpontuacao()+"",750,40);
+		g.drawString(regras.getPontuacao().getPontuacao()+"",750,40);
 	}
 	
 	public void paintLife(Graphics2D g) {
-		g.setFont(new Font("Arial",Font.BOLD,20));
+		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.red);
 		g.drawString("Vidas:",675,80);
 		g.drawString(regras.getJogador().getVida()+"",750,80);
+	}	
+	
+	public void paintGameOver(Graphics2D g) {
+
 	}
+	
+	public void paintChangeLevel(Graphics2D g) {
+		g.setFont(new Font("Arial",Font.BOLD,20));
+		g.setPaint(Color.green);
+		g.drawString("Fase:",675,120);
+		g.drawString(regras.getJogador().getVida()+"",750,120);
+	}	
 }

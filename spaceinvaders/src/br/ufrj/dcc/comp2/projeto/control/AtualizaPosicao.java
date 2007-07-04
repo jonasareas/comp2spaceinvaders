@@ -34,12 +34,12 @@ public class AtualizaPosicao extends Thread {
 					System.out.println("Boom!!!");
 					regras.getTiros().remove(cont);
 					regras.getAliens().remove(i);
-					regras.getPontuacao().aumentaponto();
-					if (regras.getPontuacao().getpontuacao_acumulada() >= 500) {
+					regras.getPontuacao().aumentaPonto();
+					if (regras.getPontuacao().getPontuacaoAcumulada() >= 500) {
 						regras.getJogador().ganhaVida();
-						regras.getPontuacao().zerapontuacaoacumulada();
+						regras.getPontuacao().zeraPontuacaoAcumulada();
 					}
-					System.out.println(regras.getPontuacao().getpontuacao());
+					System.out.println(regras.getPontuacao().getPontuacao());
 				}
 			}
 
@@ -54,14 +54,14 @@ public class AtualizaPosicao extends Thread {
 					if ( !(alien.goDown()) ) {
 						regras.getAliens().remove(cont);
 						cont--;
-						if (regras.getPontuacao().getpontuacao() > 0 ) {
-							regras.getPontuacao().diminuiponto();
-						}else {
+						if (regras.getPontuacao().getPontuacao() > 0 ) {
+							regras.getPontuacao().diminuiPonto();
+						} else {
 							regras.getJogador().perdeVida();
 							System.out.println(regras.getJogador().getVida());
 						}
 						
-						System.out.println(regras.getPontuacao().getpontuacao());
+						System.out.println(regras.getPontuacao().getPontuacao());
 
 					}
 				
