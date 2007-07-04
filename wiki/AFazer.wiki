@@ -6,19 +6,19 @@
 
 To-Do resumida:
 
-1 - pontuação
+1 - pontuação (OK)
 
-2 - vidas
+2 - vidas (OK)
 
-3 - fases
+3 - fases (Sendo feito por Jonas)
 
-4 - recordes
+4 - recordes (Sendo feito por Marcelo)
 
-5 - panels
+5 - panels (Sendo feito por Bola)
 
 6 - chefe
 
-7 - pause
+7 - pause (Sendo feito por Xico)
 
 8 - explosao
 
