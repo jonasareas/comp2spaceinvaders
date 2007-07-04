@@ -2,7 +2,7 @@ package br.ufrj.dcc.comp2.projeto.model;
 
 public class Tiro extends Sprite {
 	public Tiro(int x, int y) {
-		super("./imagens/Tiro.gif");
+		super("./imagens/Tiro.png");
 		this.x = x - this.getImagem().getWidth(null)/2;
 		this.y = y - this.getImagem().getHeight(null);
 	}
