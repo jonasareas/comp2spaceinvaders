@@ -1,6 +1,5 @@
 package br.ufrj.dcc.comp2.projeto.control;
 
-
 import br.ufrj.dcc.comp2.projeto.model.*;
 import br.ufrj.dcc.comp2.projeto.view.*;
 
@@ -20,6 +19,10 @@ public class Jogo extends Thread {
 	
 	public Jogo(Tela tela) {
 		this.tela = tela;
+	}
+	
+	public void pause() {
+	
 	}
 	
 	public void run() {

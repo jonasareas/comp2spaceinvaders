@@ -9,6 +9,7 @@ public class Teclado extends Thread implements KeyListener  {
 	private boolean left;
 	private boolean right;
 	private boolean shot;
+	private boolean pause = false;
 	/* Qualquer coisa comentada nesta classe é com 
 	 * relação a movimentação vertical da nave!!!
 	 * private boolean up;
@@ -48,11 +49,11 @@ public class Teclado extends Thread implements KeyListener  {
 	public void keyReleased(KeyEvent arg0) {
 		// TODO Auto-generated method stub
 		int tecla = arg0.getKeyCode();
-		if (tecla == KeyEvent.VK_LEFT) {
+		if(tecla == KeyEvent.VK_LEFT) {
 			this.left = false;
 		}
 		
-		if (tecla ==  KeyEvent.VK_RIGHT) {
+		if(tecla ==  KeyEvent.VK_RIGHT) {
 			this.right = false;
 		}
 		/*if (tecla ==  KeyEvent.VK_UP) {
@@ -61,9 +62,13 @@ public class Teclado extends Thread implements KeyListener  {
 		if (tecla ==  KeyEvent.VK_DOWN) {
 			this.down = false;
 		}*/
-		if (tecla == KeyEvent.VK_SPACE) {
+		if(tecla == KeyEvent.VK_SPACE) {
 			this.shot = false;
-		}		
+		}
+		
+		if(tecla == KeyEvent.VK_P) {
+			this.pause = !this.pause;
+		}
   	}
 
 	public void keyTyped(KeyEvent arg0) {

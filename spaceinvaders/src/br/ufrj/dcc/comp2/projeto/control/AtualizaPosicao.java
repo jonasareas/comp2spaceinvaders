@@ -11,7 +11,6 @@ public class AtualizaPosicao extends Thread {
 	}
 
 	public void run() {
-		
 		int velocidadeAlien = 0;
 		
 		while(true) {

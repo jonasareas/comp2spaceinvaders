@@ -77,19 +77,16 @@ public class Tela extends JFrame implements Runnable {
 
 		JMenu menuJogo = new JMenu("Jogo");
 		JMenuItem item1 = new JMenuItem("Novo Jogo");
-		JMenuItem item2 = new JMenuItem("Pause");
 		JMenuItem item3 = new JMenuItem("Ranking");
 		JMenuItem item4 = new JMenuItem("Créditos");
 		JMenuItem item5 = new JMenuItem("Sair");
 
 		item1.addActionListener(new item1Listener());
-		item2.addActionListener(new item2Listener());
 		item3.addActionListener(new item3Listener());
 		item4.addActionListener(new item4Listener());
 		item5.addActionListener(new item5Listener());
 
 		menuJogo.add(item1);
-		menuJogo.add(item2);
 		menuJogo.addSeparator();
 		menuJogo.add(item3);
 		menuJogo.addSeparator();
@@ -101,6 +98,7 @@ public class Tela extends JFrame implements Runnable {
 
 		frame.add(painel);
 
+		frame.setLocation(100,60);
 		frame.setJMenuBar(menu);
 		frame.setSize(808,650);
 		frame.setResizable(false);
@@ -111,12 +109,6 @@ public class Tela extends JFrame implements Runnable {
 		public void actionPerformed(ActionEvent event) {
 			Jogo game = new Jogo(telaAtual);
 			game.start();
-		}
-	}
-
-	class item2Listener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
-			System.out.println("Pausa o jogo");
 		}
 	}
 
