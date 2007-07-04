@@ -77,7 +77,7 @@ public class AtualizaPosicao extends Thread {
 			}
 
 			try {
-				AtualizaPosicao.sleep(1000/600);
+				AtualizaPosicao.sleep(1000/400);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

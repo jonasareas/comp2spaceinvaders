@@ -2,7 +2,7 @@ package br.ufrj.dcc.comp2.projeto.control;
 
 public class Score {
 	private int pontuacao;
-	public void Score() {
+	public Score() {
 		pontuacao = 0;
 	}
 
