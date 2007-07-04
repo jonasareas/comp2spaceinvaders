@@ -93,7 +93,7 @@ public class Teclado extends Thread implements KeyListener  {
 			}
 	
 			try {
-				Teclado.sleep(1000/300);
+				Teclado.sleep(1000/200);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

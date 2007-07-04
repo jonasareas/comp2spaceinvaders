@@ -28,7 +28,7 @@ public class ControleRegras extends Thread {
 	private int tammaxAliens;
 	private int probAlien;
 	
-	private int pontuacao;
+	// private int pontuacao;
 	
 	
 	public ControleRegras(Jogo jogo) {
