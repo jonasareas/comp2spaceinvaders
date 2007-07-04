@@ -28,9 +28,6 @@ public class ControleRegras extends Thread {
 	private int tammaxAliens;
 	private int probAlien;
 	
-	// private int pontuacao;
-	
-	
 	public ControleRegras(Jogo jogo) {
 		this.tiros = Collections.synchronizedList(new ArrayList<Tiro>());
 		this.aliens = Collections.synchronizedList(new ArrayList<Alien>());
@@ -53,6 +50,10 @@ public class ControleRegras extends Thread {
 	
 	public Score getPontuacao() {
 		return this.jogo.pontuacao;
+	}
+	
+	public Player getJogador() {
+		return this.jogo.jogador;
 	}
 	
 	public void setNave(Nave nave) {
