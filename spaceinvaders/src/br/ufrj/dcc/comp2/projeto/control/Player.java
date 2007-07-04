@@ -1,11 +1,11 @@
 package br.ufrj.dcc.comp2.projeto.control;
 
 public class Player {
-	private int vida = 3;
+	private int vida;
 	
-	/*public void Player() {
+	public Player() {
 		vida = 3;
-	}*/
+	}
 	
 	public void ganhaVida() {
 		vida++;
