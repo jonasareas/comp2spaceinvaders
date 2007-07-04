@@ -13,15 +13,15 @@ Nosso "TO-DO" atual:
 
 1 - Fazer jogo, créditos abrirem no mesmo frame
 
-2 - Caso não possamos fazer uma imagem com estrelas e passando e talz, colocar uma imagem de fundo para o jogo
+2 - Caso não possamos fazer uma imagem com estrelas e passando e talz, colocar uma imagem de fundo para o jogo  (OK)
 
-3 - Ajeitar imagens de nave, alien, tiro... (na minha opiniçao, estão meio fracas)
+3 - Ajeitar imagens de nave, alien, tiro... (OK)
 
 *Colisão, Aliens, Nave, Tiros...*
 
-1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão
+1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (OK)
 
-2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (aconteceu comigo)
+2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (OK)
 
 3 - Implementar um desenho de explosão quando o tiro bate no alien (julgo ser a ÚNICA coisa "não-exigida" que devemos nos preocupar, obviamente devido a falta de tempo)
 
