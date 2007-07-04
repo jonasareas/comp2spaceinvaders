@@ -19,15 +19,17 @@ Nosso "TO-DO" atual:
 
 *Colisão, Aliens, Nave, Tiros...*
 
-1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (OK)
+1 - Algumas vezes o tiro passa no meio do alien... Terminar todos os tipos de colisão (Bola Fazendo)
 
 2 - Não deixar que o alien desca muito pela ponta da tela, pois devido nossa nave cabeçuda (e como o tiro sai do meio dela), ela pode não alcançar (OK)
 
 3 - Implementar um desenho de explosão quando o tiro bate no alien (julgo ser a ÚNICA coisa "não-exigida" que devemos nos preocupar, obviamente devido a falta de tempo)
+  -- Deixar isso por último. Bola
 
 4 - Ver o que fazer quando a nave morre (sugiro termos uma barreira que fique na frente dela que não deixe os aliens passar, caso isso seja mais fácil do que o efeito dela ficar piscando)
 
-5 - Ver o porque dos erros de "java.util.ConcurrentModificationException"
+5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" 
+  -- _Update:_ Não aparecem mais. Não lembro se vocês corrigiram ou não. Bola
 
 *Jogo em si...*
 
@@ -49,6 +51,7 @@ Nosso "TO-DO" atual:
 1 - Organizar o código da forma mais limpa possível
 
 2 - Definir se usaremos o padrão inglês ou português
+  _Update:_ Padrão Português! Como seria padrão inglês?
 
 *Extras (só se der tempo, em ordem de importância, na minha opinião)*
 
