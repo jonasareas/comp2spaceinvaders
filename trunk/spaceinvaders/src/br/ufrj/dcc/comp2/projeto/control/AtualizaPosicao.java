@@ -9,20 +9,36 @@ import br.ufrj.dcc.comp2.projeto.view.Teclado;
 /** 
  * Classe responsável por atualizar a posição dos objetos na tela.
  * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
- * @version 1.0
+ * @version 1.4
  */
 public class AtualizaPosicao extends Thread {
+	
+	/** Novo campo do tipo ControleRegras */
 	ControleRegras regras;
+	
+	/** Campo para uma refência do tipo teclado. */
 	Teclado t;
+	
+	/** Campo armazendador da quantidade de aliens mortos. */
 	private int aliensMortos = 0;
+	
+	/** Campo para armazenar situação da fase inicial. */
 	private int fase = 1;
 
+	/**
+	 * @param regras Instancia da classe ControleRegras
+	 * @param t Instancia da classe Teclado
+	 */
 	public AtualizaPosicao(ControleRegras regras, Teclado t) {
 		super();
 		this.regras = regras;
 		this.t = t;
 	}
 
+	/** 
+	* Redefinição do método run da interface Runnable.
+	* @throws InterruptedException
+	*/
 	public void run() {
 		int velocidadeAlien = 0;
 
@@ -34,7 +50,7 @@ public class AtualizaPosicao extends Thread {
 					int i;
 					Tiro tiro = regras.getTiros().get(cont);
 
-					// Quando tiro chegar fora da tela(por cima), remove da ArrayList
+					// Quando tiro chegar fora da tela, remove da ArrayList
 					if (!(tiro.goUp())) {
 						regras.getTiros().remove(cont);
 					}
