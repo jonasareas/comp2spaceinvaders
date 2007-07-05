@@ -15,15 +15,35 @@ import br.ufrj.dcc.comp2.projeto.view.Painel;
 import br.ufrj.dcc.comp2.projeto.view.Teclado;
 
 @SuppressWarnings("serial")
+/** 
+ * Classe responsável pela inicialização das principais threads do jogo.
+ * @author Lopes, R.
+ * @version 1.5
+*/
 public class Tela extends JFrame implements Runnable {
+	
+	/** Serial da classe. */
 	private static final long serialVersionUID = 1L;
+	
+	/** Campo para referência ao tipo Painel. */
 	Painel painel;
+	
+	/** Campo para referência ao tipo Teclado. */
 	Teclado teclado;
 
+	/** Instancia de um novo objeto frame. */ 
 	private JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
+	
+	/** Campo para referência ao tipo Tela. */
 	private Tela telaAtual;
+	
+	/** Novo objeto no qual é carregado a imagem inicial do jogo. */
 	Image universo = new ImageIcon("./imagens/Abertura.jpg").getImage();
 
+	/**
+	 * @param painel Instancia de Painel
+	 * @param teclado Instancia de Teclado
+	 */
 	public Tela(Painel painel, Teclado teclado) {
 		/* Coisas comentadas nesta classe foram feitas 
 		 * pelo Bola... Pergunte a ele!! =P 
@@ -39,10 +59,16 @@ public class Tela extends JFrame implements Runnable {
 		this.setVisible(true);
 	}
 
+	/**
+	 * Construtor vazio.
+	 */
 	public Tela() {
 
 	}
 
+	/** 
+	* Redefinição do método run da interface Runnable.
+	*/
 	public void run() {
 
 	}
@@ -69,10 +95,17 @@ public class Tela extends JFrame implements Runnable {
 		teste1.setVisible(true);
 	}*/
 	
+	/**
+	 * Método que altera a condição do frame atual.
+	 */
 	public void alteracondicaojanela() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
+	/**
+	 * Método responsável por construir a tela inicial do jogo.
+	 * @param teste Instancia da Classe Tela
+	 */
 	public void constroiTelaInicial(Tela teste) {
 		telaAtual = teste;
 
@@ -120,6 +153,10 @@ public class Tela extends JFrame implements Runnable {
 		frame.setVisible(true);
 	}
 
+	/**
+	 * Classe que adiciona os item Novo Jogo do menu ao ActionListener.
+	 * @author Lopes, R.
+	 */
 	class item1Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			Jogo game = new Jogo(telaAtual);
@@ -127,6 +164,10 @@ public class Tela extends JFrame implements Runnable {
 		}
 	}
 
+	/**
+	 * Classe que adiciona os item Ranking do menu ao ActionListener.
+	 * @author Lopes, R.
+	 */
 	class item3Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			HighScores telaRanking = new HighScores();
@@ -134,6 +175,10 @@ public class Tela extends JFrame implements Runnable {
 		}
 	}
 
+	/**
+	 * Classe que adiciona os item Créditos do menu ao ActionListener.
+	 * @author Lopes, R.
+	 */
 	class item4Listener implements ActionListener{
 		public void actionPerformed(ActionEvent event){
 			Credits telaCreditos = new Credits();
@@ -141,6 +186,10 @@ public class Tela extends JFrame implements Runnable {
 		}
 	}
 
+	/**
+	 * Classe que adiciona os item Sair do menu ao ActionListener.
+	 * @author Lopes, R.
+	 */
 	class item5Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			System.exit(0);
