@@ -28,13 +28,13 @@ To-Do resumida:
 
 3 - fases *(OK)*
 
-4 - recordes *_(Classe feita. Falta integrar ao jogo.)_*
+4 - *_recordes (Classe feita. Falta integrar ao jogo.)_*
 
-5 - panels (*_Sendo feito por Bola)_*
+5 - *_ panels (Sendo feito por Bola)_*
 
 6 - chefe *(Cortado)*
 
-7 - pause *_(Grande incógnita....)_*
+7 - *_pause (Grande incógnita....)_*
 
 8 - explosao *(OK)*
 
