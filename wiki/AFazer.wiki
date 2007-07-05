@@ -10,6 +10,8 @@ a) Colocar botão na tela de créditos, ou tirar da tela de ranking (Fazer amanh
 
 b) JavaDOC (Terminar amanhã... Precisamos do código pronto e revisado)
 
+c) Game-Over *(PRIORIDADE MÁXIMA!)*
+
 To-Do resumida:
 
 1 - pontuação *(OK)*
