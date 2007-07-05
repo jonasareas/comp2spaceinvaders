@@ -119,16 +119,26 @@ public class AtualizaPosicao extends Thread {
 				try {
 					AtualizaPosicao.sleep(1000/400);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
 		}
 		
+
+		regras.getJogador().setNome(JOptionPane.showInputDialog("Digite seu Nome",""));
+		System.out.println(regras.getJogador().getNome());
+		//regras.getJogo().VerificaScore();
+
 		//String teste = JOptionPane.showInputDialog("Digite seu Nome","");
 		regras.getJogo().VerificaScore();
-		regras.getJogo().painel.pintaGameOver();
+		if(regras.getJogador().getGameover()) {
+			regras.getJogo().painel.pintaGameOver();
+		} else {
+			regras.getJogo().painel.pintaZerou();
+		}
+
 		
+
 		/*
 		regras.getJogo().teclado.stop();
 		regras.getJogo().repintor.stop();
