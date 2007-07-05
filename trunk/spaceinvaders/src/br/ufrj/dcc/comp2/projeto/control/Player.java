@@ -4,8 +4,17 @@ public class Player {
 	private int vida;
 	private boolean gameover;
 	private int fasejogador;
+	private String nome;
 
 	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
 	public Player() {
 		vida = 3;
 		gameover = false;
