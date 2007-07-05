@@ -8,16 +8,31 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
+/** 
+ * Classe responsável pela tela de créditos do jogo.
+ * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
+ * @version 1.5
+*/
 public class Credits extends JPanel implements Runnable {
+	
+	/** Instancia da classe JFrame */
 	JFrame frame = new JFrame("Créditos");
 
 	public void run() {
 
 	}
 
+	/**
+	 * Método responsável pela construção da tela de créditos do jogo.
+	 */
 	public void constroiTela() {
+		
+		/** Novo objeto imagem que carrega a imagem de fundo da tela inicial. */
 		Image universo = new ImageIcon("./imagens/Creditos.jpg").getImage();
+		
+		/** Novo objeto da classe Painel. */
 		Painel painel = new Painel(universo);
+		
 		//JButton botao_Fechar = new JButton("Fechar");
 		frame.setBackground(Color.BLACK);
 		frame.add(painel);

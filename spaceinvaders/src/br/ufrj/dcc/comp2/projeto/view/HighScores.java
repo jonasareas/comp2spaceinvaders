@@ -19,31 +19,41 @@ import javax.swing.JPanel;
 import br.ufrj.dcc.comp2.projeto.control.Score;
 
 @SuppressWarnings("serial")
+/** 
+ * Classe responsável pela tela de high scores do jogo.
+ * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
+ * @version 1.5
+*/
 public class HighScores extends JPanel {
 
-	/**
-	 * @param args
-	 */
+	/** Nova instancia de JFrame. */
 	JFrame frame = new JFrame("Ranking");
 
-	/**  Instância de Score para pegar os recordistas. */
+	/**  Instância de Score para pegar os melhores pontuadores. */
 	Score sc = Score.abreRecorde();
 
-	/** TreeMap com os recordistas, e suas respectivas pontuações */
+	/** TreeMap com os melhores pontuadores, e suas respectivas pontuações. */
 	TreeMap<Integer, String> recordistas = sc.getPontos();
 
+	/**
+	 * Método responsável por desenhar a tela de ranking.
+	 */
 	public void paintComponent(Graphics g) {
 		paintFase((Graphics2D) g);
 	}
 
+	/**
+	 * Método responsável pela construção da tela de ranking do jogo.
+	 */
 	public void constroiTela() {
-		/** */
+		
+		/** Novo objeto imagem que carrega a imagem de fundo da tela inicial. */
 		Image universo = new ImageIcon("./imagens/Ranking.JPG").getImage();
 
-		/** */
+		/** Novo objeto da classe Painel. */
 		Painel painel = new Painel(universo);
 
-		/** */
+		/** Novo objeto da classe JButton. */
 		JButton botao_Fechar = new JButton("Fechar");
 
 		frame.add(painel);
@@ -64,6 +74,10 @@ public class HighScores extends JPanel {
 		 */
 	}
 
+	/**
+	 * Método responsável por exibir os pontuadores na tela de ranking.
+	 * @param g Instancia de Graphics
+	 */
 	public void paintFase(Graphics2D g) {
 		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.YELLOW);
@@ -77,6 +91,10 @@ public class HighScores extends JPanel {
 		}
 	}
 
+	/**
+	 * Classe interna que implementa a interface ActionListener
+	 * @author Lopes, R.
+	*/
 	class botao_Fechar_Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			frame.setVisible(false);
