@@ -7,6 +7,7 @@
 MAIS ALGUMAS COISAS:
 
 a) Colocar botão na tela de créditos, ou tirar da tela de ranking (Fazer amanhã...)
+
 b) JavaDOC (Terminar amanhã... Precisamos do código pronto e revisado)
 
 To-Do resumida:
