@@ -123,6 +123,8 @@ public class AtualizaPosicao extends Thread {
 			}
 		}
 
+		regras.getJogo().tela.alteracondicaojanela();
+		
 		if(regras.getJogador().getGameover()) {
 			regras.getJogo().painel.pintaGameOver();
 		}
