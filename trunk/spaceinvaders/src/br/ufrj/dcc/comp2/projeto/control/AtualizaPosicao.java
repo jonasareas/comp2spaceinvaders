@@ -1,6 +1,7 @@
 package br.ufrj.dcc.comp2.projeto.control;
 
-import br.ufrj.dcc.comp2.projeto.model.*;
+import br.ufrj.dcc.comp2.projeto.model.Alien;
+import br.ufrj.dcc.comp2.projeto.model.Tiro;
 import br.ufrj.dcc.comp2.projeto.view.Teclado;
 
 /** 
@@ -79,7 +80,7 @@ public class AtualizaPosicao extends Thread {
 							} else {
 								regras.getJogador().perdeVida();
 								if (regras.getJogador().getVida() < 0) {
-									regras.getJogador().gameover();
+									regras.getJogador().setGameover(true);
 								}
 							}
 	
@@ -107,7 +108,7 @@ public class AtualizaPosicao extends Thread {
 							regras.getAliens().remove(cont);
 							regras.getJogador().perdeVida();
 							if (regras.getJogador().getVida() < 0) {
-								regras.getJogador().gameover();
+								regras.getJogador().setGameover(true);
 							}
 						}
 					}
@@ -122,13 +123,14 @@ public class AtualizaPosicao extends Thread {
 			}
 		}
 		
-		regras.getJogo().VerificaScore();
-		
+//		JOptionPanel.showInputDialog("Digite seu Nome","");
+		//regras.getJogo().VerificaScore();
+		/*
 		regras.getJogo().teclado.stop();
 		regras.getJogo().repintor.stop();
 		regras.getJogo().regras.stop();
 		regras.getJogo().animador.stop();
-		
+		*/
 //		Aqui tem que ficar as coisas de tela de game over e sumir a tela de jogo.
 		
 		
