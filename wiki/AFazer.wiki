@@ -2,6 +2,22 @@
 
 = A Fazer =
 
+*Colocado em 05/07/2007:* - _Bola_
+
+Ultima TO-DO List(ignorar as abaixo)
+
+1 - JavaDOC (fazendo)
+
+2 - Score deverá ser acessível a qualquer hora do jogo(isso
+teoricamente já é, afinal, basta ir ao frame principal rsrs).
+
+3 - recordes(xico fará quando acordar)
+
+4 - pause funcionar em todos os cantos
+
+5 - panels
+
+
 *Colocado em 04/07/2007:* - _Jonas_
 
 MAIS ALGUMAS COISAS:
