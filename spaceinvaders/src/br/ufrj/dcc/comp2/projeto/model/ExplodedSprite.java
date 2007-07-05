@@ -6,11 +6,26 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+/** 
+ * Classe responsável pelos objetos que podem explodir no jogo (aliens e nave).
+ * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
+ * @version 1.5
+*/
 public class ExplodedSprite extends Sprite {
+	
+	/** Campo booleano controlador da explosão. */
 	private boolean emExplosao;
+	
+	/** Novo objeto vetor de imagens. */
 	protected Image[] vector = new Image[19];
+	
+	/** Campo controlador da posição no vetor de imagens. */
 	protected int posVetor;
 
+	/**
+	 * @param file Nome do arquivo que contêm a imagem de explosão.
+	 * @throws IOException Caso alguma imagem não puder ser carregada.
+	 */
 	public ExplodedSprite(String file) {
 		super(file);
 		this.emExplosao = false;
@@ -41,6 +56,9 @@ public class ExplodedSprite extends Sprite {
 		}
 	}
 
+	/**
+	 * Método responsável por atualizar as imagens de explosão.
+	*/
 	public void anima() {
 		this.posVetor++;
 		if(this.posVetor==this.vector.length) {
@@ -51,10 +69,18 @@ public class ExplodedSprite extends Sprite {
 		}
 	}
 
+	/**
+	 * Método controlador das explosões.
+	 * @return true Se o objeto estiver explodindo.
+	*/
 	public boolean isEmExplosao() {
 		return emExplosao;
 	}
 
+	/**
+	 * Método que faz explodir os componentes do jogo.
+	 * @param emExplosao
+	 */
 	public void setEmExplosao(boolean emExplosao) {
 		this.emExplosao = emExplosao;
 	}
