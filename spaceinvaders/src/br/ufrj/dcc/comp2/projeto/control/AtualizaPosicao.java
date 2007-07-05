@@ -42,7 +42,7 @@ public class AtualizaPosicao extends Thread {
 	public void run() {
 		int velocidadeAlien = 0;
 
-		while(!regras.getJogador().getGameover() && !regras.getJogador().getZerou()) {
+		while(!regras.getJogador().getGameover() && !regras.getJogador().getZerou() && !t.getsaiuQ()) {
 			if(!t.getPause()) {
 				velocidadeAlien++;
 
@@ -123,6 +123,9 @@ public class AtualizaPosicao extends Thread {
 			}
 		}
 
+		if (t.getsaiuQ()) {
+			regras.getJogador().setGameover(true);
+		}
 		regras.getJogo().tela.alteracondicaojanela();
 		
 		if(regras.getJogador().getGameover()) {

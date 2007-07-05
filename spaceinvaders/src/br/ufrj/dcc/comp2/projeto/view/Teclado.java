@@ -24,6 +24,8 @@ public class Teclado extends Thread implements KeyListener  {
 	
 	/** Campo booleano para a situação de pause. */
 	private boolean pause = false;
+	
+	private boolean saiuQ = false;
 	/* Qualquer coisa comentada nesta classe é com 
 	 * relação a movimentação vertical da nave!!!
 	 * private boolean up;
@@ -56,6 +58,10 @@ public class Teclado extends Thread implements KeyListener  {
 	 */
 	public boolean getPause() {
 		return this.pause;
+	}
+	
+	public boolean getsaiuQ() {
+		return this.saiuQ;
 	}
 
 	/**
@@ -113,6 +119,10 @@ public class Teclado extends Thread implements KeyListener  {
 
 		if(tecla == KeyEvent.VK_P) {
 			this.pause = !this.pause;
+		}
+		
+		if(tecla == KeyEvent.VK_Q) {
+			this.saiuQ = true;
 		}
 	}
 
