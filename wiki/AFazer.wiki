@@ -4,19 +4,21 @@
 
 *Colocado em 05/07/2007:* - _Bola_
 
-Ultima TO-DO List(ignorar as abaixo)
+Ultima TO-DO List (ignorar as abaixo) - EM ORDEM DE IMPORTÂNCIA:
 
-1 - JavaDOC (fazendo)
+1 - Recordes
 
-2 - Score deverá ser acessível a qualquer hora do jogo(isso
-teoricamente já é, afinal, basta ir ao frame principal rsrs).
+2 - Panels ("Q")
 
-3 - recordes(xico fará quando acordar)
+3 - Pause
 
-4 - pause funcionar em todos os cantos
+4 - JavaDOC (Quase pronto)
 
-5 - panels
+5 - Score sendo acessível a qualquer hora do jogo(isso teoricamente já é, afinal, basta ir ao frame principal rsrs).
 
+6 - Questao do Botao de sair do jogo.
+
+/* Julgo eu (Jonas) que: Do 1 ao 4 É EXTREMAMENTE NECESSÁRIO FAZER. 5 e 6 se der tempo! */
 
 *Colocado em 04/07/2007:* - _Jonas_
 
