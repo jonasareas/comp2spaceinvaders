@@ -49,9 +49,11 @@ Nosso "TO-DO" atual:
 4 - Ver o que fazer quando a nave morre (sugiro termos uma barreira que fique na frente dela que não deixe os aliens passar, caso isso seja mais fácil do que o efeito dela ficar piscando) *(OK)*
 
 5 - Ver o porque dos erros de "java.util.ConcurrentModificationException" *(OK)*
+
 *Jogo em si...*
 
 1 - Terminando todas as detecções de colisão, colocar:
+
 - Vidas *(OK)*
 
 - Pontuação *(OK)*
