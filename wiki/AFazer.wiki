@@ -6,19 +6,19 @@
 
 MAIS ALGUMAS COISAS:
 
-a) Colocar botão na tela de créditos, ou tirar da tela de ranking (Fazer amanhã...)
+a) *_Colocar botão na tela de créditos, ou tirar da tela de ranking (Fazer amanhã...)_*
 
-b) JavaDOC (Terminar amanhã... Precisamos do código pronto e revisado)
+b) *_JavaDOC (Terminar amanhã... Precisamos do código pronto e revisado)_*
 
-c) Game-Over *(PRIORIDADE MÁXIMA!)*
+c) Game-Over *(OK)*
 
 COISAS DA ESPECIFICAÇÃO QUE FALTA FAZER:
 
-I) Score deverá ser acessível a qualquer hora do jogo 
+I) *_Score deverá ser acessível a qualquer hora do jogo _*
 
-II) Menu deve ser acessível pela tecla alt + setas
+II) *_Menu deve ser acessível pela tecla alt + setas_*
 
-III) Final para o jogo
+III) Final para o jogo *(Já temos akela tela, OK!!)*
 
 To-Do resumida:
 
@@ -28,13 +28,13 @@ To-Do resumida:
 
 3 - fases *(OK)*
 
-4 - recordes (Classe feita. Falta integrar ao jogo.)
+4 - recordes *_(Classe feita. Falta integrar ao jogo.)_*
 
-5 - panels (Sendo feito por Bola)
+5 - panels (*_Sendo feito por Bola)_*
 
 6 - chefe *(Cortado)*
 
-7 - pause (Grande incógnita....)
+7 - pause *_(Grande incógnita....)_*
 
 8 - explosao *(OK)*
 
@@ -78,7 +78,7 @@ Nosso "TO-DO" atual:
 
 *"Outta-game"*
 
-1 - Organizar o código da forma mais limpa possível (Amanhã de manhã)
+1 - *_Organizar o código da forma mais limpa possível (Amanhã de manhã)_*
 
 2 - Definir se usaremos o padrão inglês ou português
   _Update:_ Padrão Português! Como seria padrão inglês? *(Botão do foda-se?!O.o)*
