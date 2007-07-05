@@ -80,7 +80,7 @@ public class Painel extends JPanel {
 	
 	public void paintFase(Graphics2D g) {
 		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
-		g.setPaint(Color.YELLOW);
+		g.setPaint(Color.yellow);
 		g.drawString("Fase:",675,120);
 		g.drawString(regras.getJogador().getFase()+"",750,120);
 	}
