@@ -11,40 +11,40 @@ import java.util.TreeMap;
 //import spaceinvaders.src.br.ufrj.dcc.comp2.projeto.control.Score;
 
 public class Score implements Serializable {
-	
+
 	/** O serial da Classe	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	/** Campo que instancia um novo collection TreeMap. */
 	private TreeMap<Integer, String> score;
-	
+
 	/** Campo para definir onde o arquivo de recordes será gravado. */
 	private static String file = "./dados/score.dat";
-	
+
 	/** Campo para armazenar a pontuação do jogador na partida */
 	private int pontuacao;
-	
+
 	/** Pontuação acumulada(para ganhar uma nova vida)*/
 	private int pontuacaoAcumulada;
-	
+
 	public Score() {
 		score = new TreeMap<Integer, String>();
 		pontuacao = 0;
 		pontuacaoAcumulada = 0;
 	}
-	
+
 	public void aumentaPonto() {
 		pontuacao += 15;
 		pontuacaoAcumulada += 15;
 	}
-	
+
 	public void diminuiPonto() {
 		if (pontuacao > 0) {
 			pontuacao -= 10;
 			pontuacaoAcumulada -= 10;
 		}
 	}
-	
+
 	public int getPontuacao() {
 		return pontuacao;
 	}

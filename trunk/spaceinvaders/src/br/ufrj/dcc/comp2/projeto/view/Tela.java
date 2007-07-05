@@ -19,7 +19,7 @@ public class Tela extends JFrame implements Runnable {
 	private static final long serialVersionUID = 1L;
 	Painel painel;
 	Teclado teclado;
-	
+
 	private JFrame frame = new JFrame("Space Invaders - Frankenstein Games"); //novo frame
 	private Tela telaAtual;
 	Image universo = new ImageIcon("./imagens/Abertura.jpg").getImage();
@@ -40,11 +40,11 @@ public class Tela extends JFrame implements Runnable {
 	}
 
 	public Tela() {
-		
+
 	}
 
 	public void run() {
-		
+
 	}
 
 	/* Analisar esta bobagem quando for jogar para Panels...
@@ -60,7 +60,7 @@ public class Tela extends JFrame implements Runnable {
 		//frame.getContentPane().repaint();
 		//this.setVisible(true);
 	}
-	
+
 	public void vaitela(Painel painel, Teclado teclado) {
 		this.addKeyListener(teclado);
 		JFrame teste1 = new JFrame();
@@ -71,7 +71,7 @@ public class Tela extends JFrame implements Runnable {
 
 	public void constroiTelaInicial(Tela teste) {
 		telaAtual = teste;
-		
+
 		Painel painel = new Painel(universo);
 		JMenuBar menu = new JMenuBar();
 

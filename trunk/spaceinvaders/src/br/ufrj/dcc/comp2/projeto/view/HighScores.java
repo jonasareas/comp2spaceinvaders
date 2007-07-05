@@ -35,7 +35,7 @@ public class HighScores extends JPanel {
 	public void paintComponent(Graphics g) {
 		paintFase((Graphics2D) g);
 	}
-	
+
 	public void constroiTela() {
 		/** */
 		Image universo = new ImageIcon("./imagens/Ranking.JPG").getImage();
@@ -49,19 +49,19 @@ public class HighScores extends JPanel {
 		frame.add(painel);
 		frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		botao_Fechar.addActionListener(new botao_Fechar_Listener());
-		
+
 		this.repaint();
-		
+
 		frame.setResizable(false);
 		frame.setSize(800,600);
 		frame.setVisible(true);
 		/*
 		paintFase(Graphics);
-		
+
 		frame.setResizable(false);
 		frame.setSize(800,600);
 		frame.setVisible(true);
-		*/
+		 */
 	}
 
 	public void paintFase(Graphics2D g) {

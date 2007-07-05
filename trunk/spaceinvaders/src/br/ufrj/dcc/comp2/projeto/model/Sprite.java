@@ -11,10 +11,10 @@ abstract class Sprite {
 	protected int y;
 	protected Image imagem;
 	protected String file;
-	
+
 	public Sprite(String nomeArq) {
 		this.file = nomeArq;
-				
+
 		try {
 			imagem = ImageIO.read(new File(file));
 		} catch (IOException e) {
@@ -48,40 +48,23 @@ abstract class Sprite {
 	// Comparação de posição dos objetos a se colidir.
 	public boolean equals(Object o) {
 		Sprite obj = (Sprite) o;
-	
+
 		if( (this.menorY() >= obj.menorY() && this.menorY() <= obj.maiorY()) || (this.maiorY() >= obj.menorY() && this.maiorY() <= obj.maiorY()) ) {
 			if( (this.menorX() >= obj.menorX() && this.menorX() <= obj.maiorX()) || (this.maiorX() >= obj.menorX() && this.maiorX() <= obj.maiorX()) ) {
 				return true;
 			}
-			
+
 			if( this.getImagem().getWidth(null) > obj.getImagem().getWidth(null)) {
 				if (obj.menorX() >= this.menorX() && obj.menorX() <= this.maiorX() && obj.maiorX() >= this.menorX() && obj.maiorX() <= this.maiorX()) {
 					return true;
 				}
 			}
 		}
-		
+
 		return false;
-		
-		/*
-		if( (this.menorX() >= obj.menorX() && this.menorX() <= obj.maiorX()) || (this.maiorX() >= obj.menorX() && this.maiorX() <= obj.maiorX()) ) {
-			if( (this.menorY() >= obj.menorY() && this.menorY() <= obj.maiorY()) || (this.maiorY() >= obj.menorY() && this.maiorY() <= obj.maiorY()) ) {
-				return true;
-			}
-		}
-		
-		if( this.getImagem().getWidth(null) > obj.getImagem().getWidth(null)) {
-			if (obj.menorX() >= this.menorX() && obj.menorX() <= this.maiorX() && obj.maiorX() >= this.menorX() && obj.maiorX() <= this.maiorX()) {
-				if( (this.menorY() >= obj.menorY() && this.menorY() <= obj.maiorY()) || (this.maiorY() >= obj.menorY() && this.maiorY() <= obj.maiorY()) ) {
-					return true;
-				}
-			}
-		}
-	 	
-		return false;
-		*/
+
 	}
-	
+
 	private int maiorX() {
 		return this.x + this.getImagem().getWidth(null);
 	}
@@ -94,6 +77,4 @@ abstract class Sprite {
 	private int menorY() {
 		return this.y;
 	}
-	
-	
 }

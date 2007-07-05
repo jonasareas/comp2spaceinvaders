@@ -10,12 +10,12 @@ public class ExplodedSprite extends Sprite {
 	private boolean emExplosao;
 	protected Image[] vector = new Image[19];
 	protected int posVetor;
-	
+
 	public ExplodedSprite(String file) {
 		super(file);
 		this.emExplosao = false;
 		this.posVetor = -1;
-		
+
 		try {
 			vector[0] = ImageIO.read(new File("./imagens/explosao/img1.gif"));
 			vector[1] = ImageIO.read(new File("./imagens/explosao/img2.gif"));
@@ -40,7 +40,7 @@ public class ExplodedSprite extends Sprite {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void anima() {
 		this.posVetor++;
 		if(this.posVetor==this.vector.length) {
@@ -58,5 +58,5 @@ public class ExplodedSprite extends Sprite {
 	public void setEmExplosao(boolean emExplosao) {
 		this.emExplosao = emExplosao;
 	}
-	
+
 }
