@@ -60,6 +60,10 @@ public class Teclado extends Thread implements KeyListener  {
 		return this.pause;
 	}
 	
+	/**
+	 * Método responsável para sair do jogo quando pressionar "q".
+	 * @return situação se a tecla q foi pressionada.
+	 */
 	public boolean getsaiuQ() {
 		return this.saiuQ;
 	}
