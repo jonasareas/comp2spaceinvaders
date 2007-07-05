@@ -8,15 +8,14 @@ Ultima TO-DO List (ignorar as abaixo) - EM ORDEM DE IMPORTÂNCIA:
 
 1 - Recordes
 
-2 - Panels ("Q")
+2 - Panels *(OK)*
 
-3 - Pause
+3 - Pause *(OK)*
 
-4 - JavaDOC (Quase pronto)
+4 - JavaDOC *(OK)*
 
-5 - Score sendo acessível a qualquer hora do jogo(isso teoricamente já é, afinal, basta ir ao frame principal rsrs).
+5 - Score sendo acessível a qualquer hora do jogo(isso teoricamente já é, afinal, basta ir ao frame principal rsrs). *(OK)*
 
-6 - Questao do Botao de sair do jogo.
 
 /* Julgo eu (Jonas) que: Do 1 ao 4 É EXTREMAMENTE NECESSÁRIO FAZER. 5 e 6 se der tempo! */
 
