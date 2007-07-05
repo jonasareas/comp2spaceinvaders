@@ -25,7 +25,7 @@ public class Painel extends JPanel {
 	private Image fundoZerou;
 	private boolean gameOver = false;
 	private boolean zerou = false;
-	
+
 	public Painel(Nave nave, ControleRegras regras) {
 		this.nave = nave;
 		this.regras = regras;
@@ -36,9 +36,9 @@ public class Painel extends JPanel {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public Painel(Image desenho) {
 		this.desenho = desenho;
 	}
@@ -46,7 +46,7 @@ public class Painel extends JPanel {
 	public void paintComponent(Graphics g) {
 		if (desenho == null && !this.gameOver && !zerou){
 			g.drawImage(this.fundoJogo, 0, 0, null);
-			
+
 			for(int cont=0; cont<regras.getTiros().size();cont++) {
 				Tiro tiro = regras.getTiros().get(cont);
 				g.drawImage(tiro.getImagem(), tiro.getX(), tiro.getY(), null);
@@ -76,42 +76,42 @@ public class Painel extends JPanel {
 				paintZerou((Graphics2D) g);
 			}
 		}
-	
+
 	}
-	
+
 	public void paintScore(Graphics2D g) {
 		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.white);
 		g.drawString("Score:",675,40);
 		g.drawString(regras.getPontuacao().getPontuacao()+"",750,40);
 	}
-	
+
 	public void paintLife(Graphics2D g) {
 		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.red);
 		g.drawString("Vidas:",675,80);
 		g.drawString((regras.getJogador().getVida() + 1)+"",750,80);
 	}	
-	
+
 	public void paintFase(Graphics2D g) {
 		g.setFont(new Font("./fontes/AbstractClassicFont.ttf",Font.BOLD,20));
 		g.setPaint(Color.yellow);
 		g.drawString("Fase:",675,120);
 		g.drawString(regras.getJogador().getFase()+"",750,120);
 	}
-	
+
 	public void paintGameOver(Graphics2D g) {
 		g.drawImage(this.fundoGameOver, 0, 0, null);
 	}
-	
+
 	public void paintZerou(Graphics2D g) {
 		g.drawImage(this.fundoZerou, 0, 0, null);
 	}
-	
+
 	public void pintaGameOver() {
 		this.gameOver = true;
 	}
-	
+
 	public void pintaZerou() {
 		this.zerou = true;
 	}

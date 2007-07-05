@@ -10,13 +10,13 @@ import br.ufrj.dcc.comp2.projeto.view.Teclado;
  * Classe responsável por atualizar a posição dos objetos na tela.
  * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
  * @version 1.0
-*/
+ */
 public class AtualizaPosicao extends Thread {
 	ControleRegras regras;
 	Teclado t;
 	private int aliensMortos = 0;
 	private int fase = 1;
-	
+
 	public AtualizaPosicao(ControleRegras regras, Teclado t) {
 		super();
 		this.regras = regras;
@@ -25,27 +25,26 @@ public class AtualizaPosicao extends Thread {
 
 	public void run() {
 		int velocidadeAlien = 0;
-		
-		while(!regras.getJogador().situacaogameover()) {
+
+		while(!regras.getJogador().getGameover() && !regras.getJogador().getZerou()) {
 			if(!t.getPause()) {
 				velocidadeAlien++;
-	
+
 				for (int cont = 0; cont < regras.getTiros().size(); cont++) {
 					int i;
 					Tiro tiro = regras.getTiros().get(cont);
-					
+
 					// Quando tiro chegar fora da tela(por cima), remove da ArrayList
 					if (!(tiro.goUp())) {
 						regras.getTiros().remove(cont);
 					}
-					
+
 					// Captura o valor na ArrayList do alien que colidiu.
 					for(i=0; i<regras.getAliens().size() && !regras.getAliens().get(i).equals(tiro); i++);
-					
+
 					//Remove o alien.
 					//Colisão Tiro-Alien
 					if(i<regras.getAliens().size()) {
-						System.out.println("Boom!!!");
 						regras.getAliens().get(i).setEmExplosao(true);
 						regras.getExplodir().add(regras.getAliens().get(i));
 						regras.getTiros().remove(cont);
@@ -56,24 +55,23 @@ public class AtualizaPosicao extends Thread {
 							regras.getPontuacao().zeraPontuacaoAcumulada();
 						}
 						aliensMortos++;
-						System.out.println(aliensMortos);
-						if (aliensMortos >= 50) {
+						if (aliensMortos >= 2) {
 							fase++;
-							System.out.println("fase atual: " + fase);
+							if (fase > 8) {
+								regras.getJogador().setZerou(true);
+							}
 							regras.setFase(fase);
 							aliensMortos = 0;
 						}
 					}
 				}
-	
+
 				if(velocidadeAlien == 3) {
 					velocidadeAlien = 0;
 					for(int cont=0; cont < regras.getAliens().size(); cont++) {
-						
-						// int j; Só usado para a colisão alien-tiro
-						
+
 						Alien alien = regras.getAliens().get(cont);
-						
+
 						if ( !(alien.goDown()) ) {
 							regras.getAliens().remove(cont);
 							cont--;
@@ -85,25 +83,10 @@ public class AtualizaPosicao extends Thread {
 									regras.getJogador().setGameover(true);
 								}
 							}
-	
+
 						}
-					
-						/* ISSO SERIA A COLISAO "ALIEN-TIRO", A PRINCIPIO, DESNECESSARIA!!
-						//Captura o valor na ArrayList do alien que colidiu.
-						for(j=0; j<regras.getTiros().size() && !regras.getTiros().get(j).equals(alien); j++);
-						
-						//Remove o alien
-						//Colisão Alien-Tiro
-						if(j<regras.getTiros().size()) {
-							System.out.println("Boom!!!");
-							regras.getTiros().remove(j);
-							regras.getAliens().remove(cont);
-						}*/
-	
-						// Se o alien colidiu com nave, remove da Arraylist.
-						// Colisão alien-nave
+
 						if (alien.equals(regras.getNave()) && !regras.getNave().isEmExplosao()) {
-							System.out.println("Boom!!!");
 							regras.getAliens().get(cont).setEmExplosao(true);
 							regras.getExplodir().add(regras.getAliens().get(cont));
 							regras.getNave().setEmExplosao(true);
@@ -115,7 +98,7 @@ public class AtualizaPosicao extends Thread {
 						}
 					}
 				}
-	
+
 				try {
 					AtualizaPosicao.sleep(1000/400);
 				} catch (InterruptedException e) {
@@ -123,32 +106,17 @@ public class AtualizaPosicao extends Thread {
 				}
 			}
 		}
-		
 
-		regras.getJogador().setNome(JOptionPane.showInputDialog("Digite seu Nome",""));
-		System.out.println(regras.getJogador().getNome());
-		//regras.getJogo().VerificaScore();
-
-		//String teste = JOptionPane.showInputDialog("Digite seu Nome","");
-		regras.getJogo().VerificaScore();
 		if(regras.getJogador().getGameover()) {
 			regras.getJogo().painel.pintaGameOver();
-		} else {
+		}
+		if(regras.getJogador().getZerou()) {
 			regras.getJogo().painel.pintaZerou();
 		}
-
-		
-
-		/*
-		regras.getJogo().teclado.stop();
-		regras.getJogo().repintor.stop();
-		regras.getJogo().regras.stop();
-		regras.getJogo().animador.stop();
-		*/
-//		Aqui tem que ficar as coisas de tela de game over e sumir a tela de jogo.
-		
-		
+		regras.getJogador().setNome(JOptionPane.showInputDialog("Digite seu Nome",""));
+		System.out.println(regras.getJogador().getNome());
+		regras.getJogo().VerificaScore();
 	}
-	
+
 
 }

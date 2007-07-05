@@ -14,5 +14,5 @@ public class Tiro extends Sprite {
 		else
 			return true;
 	}
-	
+
 }

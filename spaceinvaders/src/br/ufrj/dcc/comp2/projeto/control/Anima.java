@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 
 public class Anima extends Thread {
 	private ControleRegras regras;
-	
+
 	public Anima(ControleRegras regras) {
 		this.regras = regras;
 	}
@@ -21,7 +21,7 @@ public class Anima extends Thread {
 					regras.getExplodir().get(i).anima();
 				}
 			}
-			
+
 			if(regras.getNave().isEmExplosao()) {
 				regras.getNave().animaNave();
 			} else {
@@ -32,8 +32,8 @@ public class Anima extends Thread {
 					e.printStackTrace();
 				}
 			}
-			
-			
+
+
 			try {
 				Anima.sleep(1000/60);
 			} catch (InterruptedException e) {

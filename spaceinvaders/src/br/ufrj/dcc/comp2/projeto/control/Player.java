@@ -3,6 +3,7 @@ package br.ufrj.dcc.comp2.projeto.control;
 public class Player {
 	private int vida;
 	private boolean gameover;
+	private boolean zerou;
 	private int fasejogador;
 	private String nome;
 
@@ -32,9 +33,9 @@ public class Player {
 		return vida;
 	}
 	
-	public boolean situacaogameover() {
-		return gameover;
-	}
+/*	public boolean situacaogameover() {
+		return thisgameover;
+	}*/
 	
 	public void setFase(int fase) {
 		this.fasejogador = fase;
@@ -50,6 +51,14 @@ public class Player {
 	
 	public boolean getGameover() {
 		return this.gameover;
+	}
+	
+	public void setZerou(boolean b) {
+		this.zerou = b;
+	}
+	
+	public boolean getZerou() {
+		return this.zerou;
 	}
 	
 	

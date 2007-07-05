@@ -31,11 +31,11 @@ public class Teclado extends Thread implements KeyListener  {
 	public boolean getPause() {
 		return this.pause;
 	}
-	
+
 	public void keyPressed(KeyEvent arg0) {
 		// TODO Auto-generated method stub
 		int tecla = arg0.getKeyCode();
-		
+
 		if (tecla == KeyEvent.VK_LEFT) {
 			this.left = true;
 		}
@@ -57,11 +57,11 @@ public class Teclado extends Thread implements KeyListener  {
 	public void keyReleased(KeyEvent arg0) {
 		// TODO Auto-generated method stub
 		int tecla = arg0.getKeyCode();
-		
+
 		if(tecla == KeyEvent.VK_LEFT) {
 			this.left = false;
 		}
-		
+
 		if(tecla ==  KeyEvent.VK_RIGHT) {
 			this.right = false;
 		}
@@ -74,11 +74,11 @@ public class Teclado extends Thread implements KeyListener  {
 		if(tecla == KeyEvent.VK_SPACE) {
 			this.shot = false;
 		}
-		
+
 		if(tecla == KeyEvent.VK_P) {
 			this.pause = !this.pause;
 		}
-  	}
+	}
 
 	public void keyTyped(KeyEvent arg0) {
 		// TODO Auto-generated method stub
@@ -106,7 +106,7 @@ public class Teclado extends Thread implements KeyListener  {
 					}
 					ctrlVelocidade++;
 				}
-		
+
 				try {
 					Teclado.sleep(1000/200);
 				} catch (InterruptedException e) {
@@ -116,5 +116,5 @@ public class Teclado extends Thread implements KeyListener  {
 			}
 		}
 	}
-	
+
 }
