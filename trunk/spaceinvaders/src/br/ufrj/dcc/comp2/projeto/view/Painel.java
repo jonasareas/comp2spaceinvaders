@@ -21,15 +21,22 @@ public class Painel extends JPanel {
 	private ControleRegras regras;
 	private Image desenho;
 	private Image fundoJogo;
+	private Image fundoGameOver;
+	private Image fundoZerou;
+	private boolean gameOver = false;
+	private boolean zerou = false;
 	
 	public Painel(Nave nave, ControleRegras regras) {
 		this.nave = nave;
 		this.regras = regras;
 		try {
 			fundoJogo = ImageIO.read(new File("./imagens/universo.jpg"));
+			fundoGameOver = ImageIO.read(new File("./imagens/tela_BadEnd.jpg"));
+			fundoZerou = ImageIO.read(new File("./imagens/tela_gameOver.jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public Painel(Image desenho) {
@@ -37,7 +44,7 @@ public class Painel extends JPanel {
 	}
 
 	public void paintComponent(Graphics g) {
-		if (desenho == null){
+		if (desenho == null && !this.gameOver && !zerou){
 			g.drawImage(this.fundoJogo, 0, 0, null);
 			
 			for(int cont=0; cont<regras.getTiros().size();cont++) {
@@ -58,8 +65,16 @@ public class Painel extends JPanel {
 			paintFase((Graphics2D) g);
 		}
 		else {
-			g.setColor(Color.white);
-			g.drawImage(desenho, 0, 0, this);
+			if (desenho != null) {
+				g.setColor(Color.white);
+				g.drawImage(desenho, 0, 0, this);
+			}
+			if (gameOver) {
+				paintGameOver((Graphics2D) g);
+			}
+			if (zerou) {
+				paintZerou((Graphics2D) g);
+			}
 		}
 	
 	}
@@ -86,10 +101,18 @@ public class Painel extends JPanel {
 	}
 	
 	public void paintGameOver(Graphics2D g) {
-
+		g.drawImage(this.fundoGameOver, 0, 0, null);
 	}
 	
-	public void paintChangeLevel(Graphics2D g) {
-		
-	}	
+	public void paintZerou(Graphics2D g) {
+		g.drawImage(this.fundoZerou, 0, 0, null);
+	}
+	
+	public void pintaGameOver() {
+		this.gameOver = true;
+	}
+	
+	public void pintaZerou() {
+		this.zerou = true;
+	}
 }

@@ -1,5 +1,7 @@
 package br.ufrj.dcc.comp2.projeto.control;
 
+import javax.swing.JOptionPane;
+
 import br.ufrj.dcc.comp2.projeto.model.Alien;
 import br.ufrj.dcc.comp2.projeto.model.Tiro;
 import br.ufrj.dcc.comp2.projeto.view.Teclado;
@@ -123,8 +125,10 @@ public class AtualizaPosicao extends Thread {
 			}
 		}
 		
-//		JOptionPanel.showInputDialog("Digite seu Nome","");
-		//regras.getJogo().VerificaScore();
+		//String teste = JOptionPane.showInputDialog("Digite seu Nome","");
+		regras.getJogo().VerificaScore();
+		regras.getJogo().painel.pintaGameOver();
+		
 		/*
 		regras.getJogo().teclado.stop();
 		regras.getJogo().repintor.stop();
