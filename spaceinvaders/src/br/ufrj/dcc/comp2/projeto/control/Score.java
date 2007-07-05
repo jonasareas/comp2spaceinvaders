@@ -10,12 +10,17 @@ import java.util.TreeMap;
 
 //import spaceinvaders.src.br.ufrj.dcc.comp2.projeto.control.Score;
 
+/** 
+ * Classe controladora da pontuação do jogador.
+ * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
+ * @version 1.5
+*/
 public class Score implements Serializable {
 
-	/** O serial da Classe	 */
+	/** O serial da Classe. */
 	private static final long serialVersionUID = 1L;
 
-	/** Campo que instancia um novo collection TreeMap. */
+	/** Campo de referência a um novo collection TreeMap. */
 	private TreeMap<Integer, String> score;
 
 	/** Campo para definir onde o arquivo de recordes será gravado. */
@@ -24,7 +29,7 @@ public class Score implements Serializable {
 	/** Campo para armazenar a pontuação do jogador na partida */
 	private int pontuacao;
 
-	/** Pontuação acumulada(para ganhar uma nova vida)*/
+	/** Campo para armazenar a pontuação acumulada(para ganhar uma nova vida)*/
 	private int pontuacaoAcumulada;
 
 	public Score() {
@@ -33,26 +38,43 @@ public class Score implements Serializable {
 		pontuacaoAcumulada = 0;
 	}
 
+	/**
+	 * Método responsável pela pontuação do jogo.
+    */
 	public void aumentaPonto() {
 		pontuacao += 15;
 		pontuacaoAcumulada += 15;
 	}
 
+	/**
+	 * Método responsável pela decréscimo da pontuação do jogo. 
+	*/
 	public void diminuiPonto() {
 		if (pontuacao > 0) {
 			pontuacao -= 10;
-			pontuacaoAcumulada -= 10;
+			//pontuacaoAcumulada -= 10;
 		}
 	}
 
+	/**
+	 * Método responsável por pegar a pontuação do jogo.
+	 * @return pontuação Quantidade de pontos
+	 */
 	public int getPontuacao() {
 		return pontuacao;
 	}
 
+	/**
+	 * Método responsável por pegar a pontuação acumulada do jogo.
+	 * @return pontuação Quantidade de pontos acumulada
+	 */
 	public int getPontuacaoAcumulada() {
 		return pontuacaoAcumulada;
 	}
 
+	/**
+	 * Método que zera a pontuação acumulada do jogo.
+	 */  
 	public void zeraPontuacaoAcumulada() {
 		pontuacaoAcumulada = 0;
 	}
@@ -84,7 +106,7 @@ public class Score implements Serializable {
 	 * @throws IOException
 	 */
 	public void salvarRecorde() {
-		System.out.println("passei aqui!");
+		System.out.println("passei aqui! classe score");
 		try {
 			FileOutputStream fileStream = new FileOutputStream(file);
 			ObjectOutputStream output = new ObjectOutputStream(fileStream);
