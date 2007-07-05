@@ -3,7 +3,8 @@ package br.ufrj.dcc.comp2.projeto.view;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import br.ufrj.dcc.comp2.projeto.model.*;
+import br.ufrj.dcc.comp2.projeto.control.Player;
+import br.ufrj.dcc.comp2.projeto.model.Nave;
 
 public class Teclado extends Thread implements KeyListener  {
 	private boolean left;
@@ -16,13 +17,15 @@ public class Teclado extends Thread implements KeyListener  {
 	 * private boolean down;
 	 */
 	private Nave nave;
+	private Player j;
 
 	private int ctrlVelocidade;
 
-	public Teclado(Nave nave) {
+	public Teclado(Nave nave, Player j) {
 		super();
 		this.nave = nave;
 		ctrlVelocidade = 0;
+		this.j = j;
 	}
 
 	public boolean getPause() {
@@ -82,7 +85,7 @@ public class Teclado extends Thread implements KeyListener  {
 	}
 
 	public void run() {
-		while(true){
+		while(!j.getGameover()){
 			if(!pause) {
 				if(left) {
 					this.nave.goLeft();
