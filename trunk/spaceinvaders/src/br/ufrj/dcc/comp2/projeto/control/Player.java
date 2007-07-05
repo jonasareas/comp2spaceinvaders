@@ -4,6 +4,7 @@ public class Player {
 	private int vida;
 	private boolean gameover;
 	private int fasejogador;
+
 	
 	public Player() {
 		vida = 3;
@@ -22,10 +23,6 @@ public class Player {
 		return vida;
 	}
 	
-	public void gameover() {
-		gameover = true;
-	}
-	
 	public boolean situacaogameover() {
 		return gameover;
 	}
@@ -36,6 +33,14 @@ public class Player {
 	
 	public int getFase() {
 		return fasejogador;
+	}
+	
+	public void setGameover(boolean b) {
+		this.gameover = b;
+	}
+	
+	public boolean getGameover() {
+		return this.gameover;
 	}
 	
 	
