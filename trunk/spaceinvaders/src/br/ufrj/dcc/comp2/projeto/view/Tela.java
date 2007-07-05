@@ -80,7 +80,18 @@ public class Tela extends JFrame implements Runnable {
 		JMenuItem item3 = new JMenuItem("Ranking");
 		JMenuItem item4 = new JMenuItem("Créditos");
 		JMenuItem item5 = new JMenuItem("Sair");
-
+		
+		menuJogo.setDisplayedMnemonicIndex(0);
+		menuJogo.setMnemonic('J');
+		item1.setDisplayedMnemonicIndex(0);
+		item1.setMnemonic('N');
+		item3.setDisplayedMnemonicIndex(0);
+		item3.setMnemonic('R');
+		item4.setDisplayedMnemonicIndex(0);
+		item4.setMnemonic('C');
+		item5.setDisplayedMnemonicIndex(0);
+		item5.setMnemonic('S');
+		
 		item1.addActionListener(new item1Listener());
 		item3.addActionListener(new item3Listener());
 		item4.addActionListener(new item4Listener());
