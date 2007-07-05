@@ -37,7 +37,7 @@ public class Jogo extends Thread {
 		this.jogador = new Player();
 		this.regras = new ControleRegras(this);
 		this.nave = new Nave(regras);
-		this.teclado = new Teclado(this.nave);
+		this.teclado = new Teclado(this.nave, this.jogador);
 		this.animador = new Anima(regras);
 		this.atualizador = new AtualizaPosicao(regras,teclado);
 		this.pontuacao = new Score();
