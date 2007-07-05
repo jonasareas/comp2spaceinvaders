@@ -99,7 +99,11 @@ public class AtualizaPosicao extends Thread {
 	
 						// Se o alien colidiu com nave, remove da Arraylist.
 						// Colisão alien-nave
-						if (alien.equals(regras.getNave())) {
+						if (alien.equals(regras.getNave()) && !regras.getNave().isEmExplosao()) {
+							System.out.println("Boom!!!");
+							regras.getAliens().get(cont).setEmExplosao(true);
+							regras.getExplodir().add(regras.getAliens().get(cont));
+							regras.getNave().setEmExplosao(true);
 							regras.getAliens().remove(cont);
 							regras.getJogador().perdeVida();
 							if (regras.getJogador().getVida() < 0) {

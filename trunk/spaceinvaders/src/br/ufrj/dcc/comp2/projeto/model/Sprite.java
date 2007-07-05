@@ -41,7 +41,7 @@ abstract class Sprite {
 	public Image getImagem() {
 		return this.imagem;
 	}
-	protected void setImagem(Image imagem) {
+	public void setImagem(Image imagem) {
 		this.imagem = imagem;
 	}
 
