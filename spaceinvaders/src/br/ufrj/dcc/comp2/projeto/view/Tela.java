@@ -31,7 +31,7 @@ public class Tela extends JFrame implements Runnable {
 		 * this.teclado = teclado;
 		 * this.constroitelajogo();
 		 */
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		this.setBounds(0, 0, 800, 600);
 		this.add(painel);
 		this.addKeyListener(teclado);
@@ -68,7 +68,11 @@ public class Tela extends JFrame implements Runnable {
 		teste1.setSize(808,650);
 		teste1.setVisible(true);
 	}*/
-
+	
+	public void alteracondicaojanela() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
 	public void constroiTelaInicial(Tela teste) {
 		telaAtual = teste;
 
