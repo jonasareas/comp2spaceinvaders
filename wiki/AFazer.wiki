@@ -12,6 +12,14 @@ b) JavaDOC (Terminar amanhã... Precisamos do código pronto e revisado)
 
 c) Game-Over *(PRIORIDADE MÁXIMA!)*
 
+COISAS DA ESPECIFICAÇÃO QUE FALTA FAZER:
+
+I) Score deverá ser acessível a qualquer hora do jogo 
+
+II) Menu deve ser acessível pela tecla alt + setas
+
+III) Final para o jogo
+
 To-Do resumida:
 
 1 - pontuação *(OK)*
