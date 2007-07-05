@@ -27,7 +27,7 @@ public class Jogo extends Thread {
 	}
 	
 	public void VerificaScore() {
-		pontuacao.abreRecorde();
+		Score.abreRecorde();
 		pontuacao.AdicionarRecorde(pontuacao.getPontuacao(), "jogador");
 		pontuacao.salvarRecorde();
 	}

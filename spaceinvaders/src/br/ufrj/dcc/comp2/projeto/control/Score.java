@@ -11,24 +11,28 @@ import java.util.TreeMap;
 //import spaceinvaders.src.br.ufrj.dcc.comp2.projeto.control.Score;
 
 public class Score implements Serializable {
-	/**
-	 * 
-	 */
+	
+	/** O serial da Classe	 */
 	private static final long serialVersionUID = 1L;
 	
 	/** Campo que instancia um novo collection TreeMap. */
 	private TreeMap<Integer, String> score;
+	
 	/** Campo para definir onde o arquivo de recordes será gravado. */
 	private static String file = "./dados/score.dat";
 	
+	/** Campo para armazenar a pontuação do jogador na partida */
 	private int pontuacao;
+	
+	/** Pontuação acumulada(para ganhar uma nova vida)*/
 	private int pontuacaoAcumulada;
+	
 	public Score() {
 		score = new TreeMap<Integer, String>();
 		pontuacao = 0;
 		pontuacaoAcumulada = 0;
 	}
-
+	
 	public void aumentaPonto() {
 		pontuacao += 15;
 		pontuacaoAcumulada += 15;
@@ -62,8 +66,11 @@ public class Score implements Serializable {
 		/** Campo de refêrencia para gravação do score. */
 		Score rec;
 		try {
-			ObjectInputStream in = new ObjectInputStream(new FileInputStream(file));
-			rec = (Score) in.readObject();
+			FileInputStream fileStream = new FileInputStream(file);
+			ObjectInputStream input = new ObjectInputStream(fileStream);
+			Object recuperado = input.readObject();
+			rec = (Score) recuperado;
+			input.close();
 		} catch (Exception e) {
 			System.out.println("Arquivo de recordes nao encontrado. Novo arquivo criado.");
 			rec = new Score();
@@ -77,9 +84,12 @@ public class Score implements Serializable {
 	 * @throws IOException
 	 */
 	public void salvarRecorde() {
+		System.out.println("passei aqui!");
 		try {
-			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file));
-			out.writeObject(this);
+			FileOutputStream fileStream = new FileOutputStream(file);
+			ObjectOutputStream output = new ObjectOutputStream(fileStream);
+			output.writeObject(this);
+			output.close();
 		} catch (Exception e) {
 			System.out.println("Falha ao salvar o arquivo de score.");
 			System.exit(1);
@@ -105,7 +115,7 @@ public class Score implements Serializable {
 	}
 
 	/**
-	 * Método para obter os pontos de um jogador.
+	 * Método para obter os pontos dos jogadores no ranking.
 	 * @return Pontuação do jogador.
 	 */
 	public TreeMap<Integer, String> getPontos() {
