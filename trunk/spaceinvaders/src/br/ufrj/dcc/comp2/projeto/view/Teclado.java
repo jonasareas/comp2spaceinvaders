@@ -71,7 +71,7 @@ public class Teclado extends Thread implements KeyListener  {
 	/**
 	 * Método requerido pela interface KeyListener, responsável pelas ações à serem
 	 * executadas quando determinada tecla for pressionada.
-	 * @param arg KeyEvent
+	 * @param arg0 KeyEvent
 	 */
 	public void keyPressed(KeyEvent arg0) {
 		// TODO Auto-generated method stub
@@ -98,7 +98,7 @@ public class Teclado extends Thread implements KeyListener  {
 	/**
 	 * Método requerido pela interface KeyListener, responsável pelas ações à serem
 	 * executadas quando determinada tecla for solta.
-	 * @param arg KeyEvent
+	 * @param arg0 KeyEvent
 	 */
 	public void keyReleased(KeyEvent arg0) {
 		// TODO Auto-generated method stub
@@ -133,7 +133,7 @@ public class Teclado extends Thread implements KeyListener  {
 	/**
 	 * Método requerido pela interface KeyListener, responsável pelas ações à serem
 	 * executadas quando determinada tecla for pressionada e solta logo em seguida.
-	 * @param arg KeyEvent
+	 * @param arg0 KeyEvent
 	 */
 	public void keyTyped(KeyEvent arg0) {
 		// TODO Auto-generated method stub

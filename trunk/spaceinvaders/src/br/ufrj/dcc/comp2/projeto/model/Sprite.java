@@ -83,7 +83,6 @@ abstract class Sprite {
 	
 	/**
 	 * Método responsável pela referência ao nome da nova imagem a ser carregada.
-	 * @return Atributo Imagem
 	 */
 	public void setImagem(Image imagem) {
 		this.imagem = imagem;

@@ -51,8 +51,11 @@ public class Score implements Serializable {
 	*/
 	public void diminuiPonto() {
 		if (pontuacao > 0) {
-			pontuacao -= 10;
-			//pontuacaoAcumulada -= 10;
+			if (pontuacao < 10) {
+				pontuacao = 0;
+			} else {
+				pontuacao -= 10;	
+			}
 		}
 	}
 
@@ -102,11 +105,9 @@ public class Score implements Serializable {
 
 	/**
 	 * Método para salvar do arquivo de recordes.
-	 * @return A referência para o arquivo salvo.
 	 * @throws IOException
 	 */
 	public void salvarRecorde() {
-		System.out.println("passei aqui! classe score");
 		try {
 			FileOutputStream fileStream = new FileOutputStream(file);
 			ObjectOutputStream output = new ObjectOutputStream(fileStream);

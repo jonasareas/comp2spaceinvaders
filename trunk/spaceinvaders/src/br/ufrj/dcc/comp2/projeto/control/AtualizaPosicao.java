@@ -71,7 +71,7 @@ public class AtualizaPosicao extends Thread {
 							regras.getPontuacao().zeraPontuacaoAcumulada();
 						}
 						aliensMortos++;
-						if (aliensMortos >= 50) {
+						if (aliensMortos >= 15) {
 							fase++;
 							if (fase > 8) {
 								regras.getJogador().setZerou(true);

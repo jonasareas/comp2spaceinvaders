@@ -1,29 +1,26 @@
 package br.ufrj.dcc.comp2.projeto.view;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Iterator;
 import java.util.TreeMap;
 
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import br.ufrj.dcc.comp2.projeto.control.Score;
 
-@SuppressWarnings("serial")
+
 /** 
  * Classe responsável pela tela de high scores do jogo.
  * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
  * @version 1.5
 */
+@SuppressWarnings("serial")
 public class HighScores extends JPanel {
 
 	/** Nova instancia de JFrame. */
@@ -53,15 +50,18 @@ public class HighScores extends JPanel {
 		/** Novo objeto da classe Painel. */
 		Painel painel = new Painel(universo);
 
-		/** Novo objeto da classe JButton. */
-		JButton botao_Fechar = new JButton("Fechar");
+		/* Novo objeto da classe JButton. */
+		//JButton botao_Fechar = new JButton("Fechar");
 
 		frame.add(painel);
+		/*
 		frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		botao_Fechar.addActionListener(new botao_Fechar_Listener());
+		*/
 
 		this.repaint();
 
+		frame.setLocation(3, 45);
 		frame.setResizable(false);
 		frame.setSize(800,600);
 		frame.setVisible(true);
@@ -91,15 +91,18 @@ public class HighScores extends JPanel {
 		}
 	}
 
-	/**
+	
+	/*
 	 * Classe interna que implementa a interface ActionListener
 	 * @author Lopes, R.
 	*/
+	/*
 	class botao_Fechar_Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			frame.setVisible(false);
 			frame.dispose();
 		}
 	}
+	*/
 
 }
