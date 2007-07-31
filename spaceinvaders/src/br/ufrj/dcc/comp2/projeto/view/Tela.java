@@ -14,12 +14,13 @@ import br.ufrj.dcc.comp2.projeto.view.HighScores;
 import br.ufrj.dcc.comp2.projeto.view.Painel;
 import br.ufrj.dcc.comp2.projeto.view.Teclado;
 
-@SuppressWarnings("serial")
+
 /** 
  * Classe responsável pela inicialização das principais threads do jogo.
  * @author Lopes, R.
  * @version 1.5
 */
+@SuppressWarnings("serial")
 public class Tela extends JFrame implements Runnable {
 	
 	/** Serial da classe. */
@@ -51,8 +52,10 @@ public class Tela extends JFrame implements Runnable {
 		 * this.teclado = teclado;
 		 * this.constroitelajogo();
 		 */
+		
 		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		this.setBounds(0, 0, 800, 600);
+		this.setLocation(3, 45);
 		this.add(painel);
 		this.addKeyListener(teclado);
 		this.setResizable(false);
@@ -99,7 +102,7 @@ public class Tela extends JFrame implements Runnable {
 	 * Método que altera a condição do frame atual.
 	 */
 	public void alteracondicaojanela() {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 	}
 	
 	/**
@@ -146,7 +149,7 @@ public class Tela extends JFrame implements Runnable {
 
 		frame.add(painel);
 
-		frame.setLocation(100,60);
+		frame.setLocation(0, 0);
 		frame.setJMenuBar(menu);
 		frame.setSize(808,650);
 		frame.setResizable(false);

@@ -7,12 +7,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-@SuppressWarnings("serial")
+
 /** 
  * Classe responsável pela tela de créditos do jogo.
  * @author Arêas, J. , Jochem, M. , Lopes, R. , Vianna, F.
  * @version 1.5
 */
+@SuppressWarnings("serial")
 public class Credits extends JPanel implements Runnable {
 	
 	/** Instancia da classe JFrame */
@@ -39,6 +40,7 @@ public class Credits extends JPanel implements Runnable {
 		//frame.getContentPane().add(BorderLayout.SOUTH, botao_Fechar);
 		//botao_Fechar.addActionListener(new botao_Fechar_Listener());
 
+		frame.setLocation(3, 45);
 		frame.setResizable(false);
 		frame.setSize(800,600);
 		frame.setVisible(true);

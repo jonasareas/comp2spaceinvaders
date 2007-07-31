@@ -189,7 +189,7 @@ public class ControleRegras extends Thread {
 			this.probAlien = 30;
 			break;
 		case 8:
-			this.tammaxAliens = 40;
+			this.tammaxAliens = 50;
 			this.probAlien = 35;
 			break;
 		default: 

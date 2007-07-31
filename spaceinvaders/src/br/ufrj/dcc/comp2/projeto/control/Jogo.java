@@ -39,9 +39,9 @@ public class Jogo extends Thread {
 	/** Campo para uma referência ao objeto Player. */
 	public Player jogador;
 
-	/* Pra que este construtor vazio?? */
-	public Jogo() {
+	/*public Jogo() {
 	}
+	*/
 
 	/** 
 	 * @param tela - Uma instancia de Tela
